@@ -1,0 +1,6 @@
+framework module Pods_Tetopi_TetopiUITests {
+  umbrella header "Pods-Tetopi-TetopiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

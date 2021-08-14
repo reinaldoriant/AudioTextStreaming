@@ -3,16 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA2BB66444555E581ABF88F /* Pods_TetopiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D5A2380F74D8C30A9D9507 /* Pods_TetopiTests.framework */; };
+		6A5541EAC6645DFE67AD5949 /* Pods_Tetopi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458CEB01134B14FD86A2248 /* Pods_Tetopi.framework */; };
+		A5026D9826C7CD8B005B4321 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9026C7CD8A005B4321 /* Thumbnail.swift */; };
+		A5026D9926C7CD8B005B4321 /* Edition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8826C7CD8A005B4321 /* Edition.swift */; };
+		A5026D9A26C7CD8B005B4321 /* MediumLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8C26C7CD8A005B4321 /* MediumLarge.swift */; };
+		A5026D9B26C7CD8B005B4321 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8626C7CD8A005B4321 /* Print.swift */; };
+		A5026D9C26C7CD8B005B4321 /* Large.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8326C7CD8A005B4321 /* Large.swift */; };
+		A5026D9D26C7CD8B005B4321 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9526C7CD8B005B4321 /* Result.swift */; };
+		A5026D9E26C7CD8B005B4321 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8E26C7CD8A005B4321 /* Message.swift */; };
+		A5026D9F26C7CD8B005B4321 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8126C7CD8A005B4321 /* Category.swift */; };
+		A5026DA026C7CD8B005B4321 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9626C7CD8B005B4321 /* Keyword.swift */; };
+		A5026DA126C7CD8B005B4321 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8926C7CD8A005B4321 /* Meta.swift */; };
+		A5026DA226C7CD8B005B4321 /* Medium.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8026C7CD89005B4321 /* Medium.swift */; };
+		A5026DA326C7CD8B005B4321 /* ArticleByLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8226C7CD8A005B4321 /* ArticleByLine.swift */; };
+		A5026DA426C7CD8B005B4321 /* Headline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8A26C7CD8A005B4321 /* Headline.swift */; };
+		A5026DA526C7CD8B005B4321 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8726C7CD8A005B4321 /* ArticleListModel.swift */; };
+		A5026DA626C7CD8B005B4321 /* Original.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8D26C7CD8A005B4321 /* Original.swift */; };
+		A5026DA726C7CD8B005B4321 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9326C7CD8A005B4321 /* Page.swift */; };
+		A5026DA826C7CD8B005B4321 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8B26C7CD8A005B4321 /* Article.swift */; };
+		A5026DA926C7CD8B005B4321 /* ThumbnailMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9426C7CD8A005B4321 /* ThumbnailMedium.swift */; };
+		A5026DAA26C7CD8B005B4321 /* PhotographerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8F26C7CD8A005B4321 /* PhotographerName.swift */; };
+		A5026DAB26C7CD8B005B4321 /* FollowingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8426C7CD8A005B4321 /* FollowingUser.swift */; };
+		A5026DAC26C7CD8B005B4321 /* PostThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D8526C7CD8A005B4321 /* PostThumbnail.swift */; };
+		A5026DAD26C7CD8B005B4321 /* PostTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9726C7CD8B005B4321 /* PostTag.swift */; };
+		A5026DAE26C7CD8B005B4321 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9126C7CD8A005B4321 /* Term.swift */; };
+		A5026DAF26C7CD8B005B4321 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026D9226C7CD8A005B4321 /* Size.swift */; };
+		A5026DB226C7CDA3005B4321 /* TetopiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DB126C7CDA3005B4321 /* TetopiModel.swift */; };
+		A5026DB626C7CDF4005B4321 /* ArticleListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DB526C7CDF4005B4321 /* ArticleListRepository.swift */; };
+		A5026DC126C7CE31005B4321 /* ArticleListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DBE26C7CE31005B4321 /* ArticleListService.swift */; };
+		A5026DC226C7CE31005B4321 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DBB26C7CE31005B4321 /* ResultState.swift */; };
+		A5026DC326C7CE31005B4321 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DBA26C7CE30005B4321 /* APIBuilder.swift */; };
+		A5026DC426C7CE31005B4321 /* ArticleListEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DBC26C7CE31005B4321 /* ArticleListEndPoint.swift */; };
+		A5026DC926C7CE42005B4321 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DC726C7CE42005B4321 /* ErrorResponse.swift */; };
+		A5026DCD26C7CF28005B4321 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DCC26C7CF28005B4321 /* DashboardView.swift */; };
+		A5026DD826C7DADC005B4321 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DD726C7DADC005B4321 /* FontExtension.swift */; };
+		A5026DDA26C7DCBB005B4321 /* PlayFairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */; };
 		A59FE63926C7CBA1005F2BCC /* TetopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */; };
 		A59FE63B26C7CBA1005F2BCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63A26C7CBA1005F2BCC /* ContentView.swift */; };
 		A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FE63C26C7CBA4005F2BCC /* Assets.xcassets */; };
 		A59FE64026C7CBA4005F2BCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FE63F26C7CBA4005F2BCC /* Preview Assets.xcassets */; };
 		A59FE64B26C7CBA4005F2BCC /* TetopiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE64A26C7CBA4005F2BCC /* TetopiTests.swift */; };
 		A59FE65626C7CBA4005F2BCC /* TetopiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE65526C7CBA4005F2BCC /* TetopiUITests.swift */; };
+		A59FE66E26C7CBEF005F2BCC /* ePaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE66C26C7CBEF005F2BCC /* ePaperView.swift */; };
+		A59FE66F26C7CBEF005F2BCC /* bookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE66A26C7CBEF005F2BCC /* bookView.swift */; };
+		A59FE67026C7CBEF005F2BCC /* akunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE66B26C7CBEF005F2BCC /* akunView.swift */; };
+		A59FE67426C7CC14005F2BCC /* CardthumbItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE67326C7CC14005F2BCC /* CardthumbItemView.swift */; };
+		A59FE67526C7CC14005F2BCC /* ArticleListTerbaru.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE67226C7CC14005F2BCC /* ArticleListTerbaru.swift */; };
+		A59FE67926C7CC28005F2BCC /* TetopiComper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE67726C7CC28005F2BCC /* TetopiComper.swift */; };
+		A59FE67A26C7CC28005F2BCC /* TetopiFuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE67826C7CC28005F2BCC /* TetopiFuper.swift */; };
+		A59FE68026C7CC53005F2BCC /* ArticleListTerbaruViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE67E26C7CC53005F2BCC /* ArticleListTerbaruViewModel.swift */; };
+		A59FE68126C7CC53005F2BCC /* TetopiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE67F26C7CC53005F2BCC /* TetopiViewModel.swift */; };
+		A59FE68626C7CCA5005F2BCC /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE68426C7CCA5005F2BCC /* Date.swift */; };
+		FCBF5FB78F6C9C55D518F110 /* Pods_Tetopi_TetopiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629A2F05890A7A1C681AA3EE /* Pods_Tetopi_TetopiUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +80,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C4006BFCC682A3E6C739DF3 /* Pods-Tetopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetopi.release.xcconfig"; path = "Target Support Files/Pods-Tetopi/Pods-Tetopi.release.xcconfig"; sourceTree = "<group>"; };
+		3525296993AF03FF10C96720 /* Pods-Tetopi-TetopiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetopi-TetopiUITests.release.xcconfig"; path = "Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		629A2F05890A7A1C681AA3EE /* Pods_Tetopi_TetopiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tetopi_TetopiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7399CA192DE693A45D1E736C /* Pods-Tetopi-TetopiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetopi-TetopiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7458CEB01134B14FD86A2248 /* Pods_Tetopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tetopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5026D8026C7CD89005B4321 /* Medium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium.swift; sourceTree = "<group>"; };
+		A5026D8126C7CD8A005B4321 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A5026D8226C7CD8A005B4321 /* ArticleByLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleByLine.swift; sourceTree = "<group>"; };
+		A5026D8326C7CD8A005B4321 /* Large.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Large.swift; sourceTree = "<group>"; };
+		A5026D8426C7CD8A005B4321 /* FollowingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingUser.swift; sourceTree = "<group>"; };
+		A5026D8526C7CD8A005B4321 /* PostThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostThumbnail.swift; sourceTree = "<group>"; };
+		A5026D8626C7CD8A005B4321 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		A5026D8726C7CD8A005B4321 /* ArticleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListModel.swift; sourceTree = "<group>"; };
+		A5026D8826C7CD8A005B4321 /* Edition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edition.swift; sourceTree = "<group>"; };
+		A5026D8926C7CD8A005B4321 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		A5026D8A26C7CD8A005B4321 /* Headline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headline.swift; sourceTree = "<group>"; };
+		A5026D8B26C7CD8A005B4321 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A5026D8C26C7CD8A005B4321 /* MediumLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLarge.swift; sourceTree = "<group>"; };
+		A5026D8D26C7CD8A005B4321 /* Original.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Original.swift; sourceTree = "<group>"; };
+		A5026D8E26C7CD8A005B4321 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A5026D8F26C7CD8A005B4321 /* PhotographerName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographerName.swift; sourceTree = "<group>"; };
+		A5026D9026C7CD8A005B4321 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		A5026D9126C7CD8A005B4321 /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		A5026D9226C7CD8A005B4321 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		A5026D9326C7CD8A005B4321 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		A5026D9426C7CD8A005B4321 /* ThumbnailMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailMedium.swift; sourceTree = "<group>"; };
+		A5026D9526C7CD8B005B4321 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A5026D9626C7CD8B005B4321 /* Keyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		A5026D9726C7CD8B005B4321 /* PostTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTag.swift; sourceTree = "<group>"; };
+		A5026DB126C7CDA3005B4321 /* TetopiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiModel.swift; sourceTree = "<group>"; };
+		A5026DB526C7CDF4005B4321 /* ArticleListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListRepository.swift; sourceTree = "<group>"; };
+		A5026DBA26C7CE30005B4321 /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
+		A5026DBB26C7CE31005B4321 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		A5026DBC26C7CE31005B4321 /* ArticleListEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListEndPoint.swift; sourceTree = "<group>"; };
+		A5026DBE26C7CE31005B4321 /* ArticleListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListService.swift; sourceTree = "<group>"; };
+		A5026DC726C7CE42005B4321 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		A5026DCC26C7CF28005B4321 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A5026DCF26C7DA18005B4321 /* Hind-Bold.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Bold.ttc"; path = "Tetopi/Presentation/Asset/Hind-Bold.ttc"; sourceTree = SOURCE_ROOT; };
+		A5026DD026C7DA18005B4321 /* Hind-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Light.ttc"; path = "Tetopi/Presentation/Asset/Hind-Light.ttc"; sourceTree = SOURCE_ROOT; };
+		A5026DD126C7DA18005B4321 /* Hind-Regular.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Regular.ttc"; path = "Tetopi/Presentation/Asset/Hind-Regular.ttc"; sourceTree = SOURCE_ROOT; };
+		A5026DD226C7DA18005B4321 /* Hind-Medium.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Medium.ttc"; path = "Tetopi/Presentation/Asset/Hind-Medium.ttc"; sourceTree = SOURCE_ROOT; };
+		A5026DD326C7DA18005B4321 /* Hind-SemiBold.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-SemiBold.ttc"; path = "Tetopi/Presentation/Asset/Hind-SemiBold.ttc"; sourceTree = SOURCE_ROOT; };
+		A5026DD726C7DADC005B4321 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayFairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		A59FE63526C7CBA1005F2BCC /* Tetopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetopi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiApp.swift; sourceTree = "<group>"; };
 		A59FE63A26C7CBA1005F2BCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +136,20 @@
 		A59FE65126C7CBA4005F2BCC /* TetopiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetopiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FE65526C7CBA4005F2BCC /* TetopiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiUITests.swift; sourceTree = "<group>"; };
 		A59FE65726C7CBA4005F2BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59FE66A26C7CBEF005F2BCC /* bookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookView.swift; sourceTree = "<group>"; };
+		A59FE66B26C7CBEF005F2BCC /* akunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = akunView.swift; sourceTree = "<group>"; };
+		A59FE66C26C7CBEF005F2BCC /* ePaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ePaperView.swift; sourceTree = "<group>"; };
+		A59FE67226C7CC14005F2BCC /* ArticleListTerbaru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTerbaru.swift; sourceTree = "<group>"; };
+		A59FE67326C7CC14005F2BCC /* CardthumbItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardthumbItemView.swift; sourceTree = "<group>"; };
+		A59FE67726C7CC28005F2BCC /* TetopiComper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiComper.swift; sourceTree = "<group>"; };
+		A59FE67826C7CC28005F2BCC /* TetopiFuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiFuper.swift; sourceTree = "<group>"; };
+		A59FE67E26C7CC53005F2BCC /* ArticleListTerbaruViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTerbaruViewModel.swift; sourceTree = "<group>"; };
+		A59FE67F26C7CC53005F2BCC /* TetopiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiViewModel.swift; sourceTree = "<group>"; };
+		A59FE68426C7CCA5005F2BCC /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		C07B50878CE70675C972850E /* Pods-TetopiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TetopiTests.debug.xcconfig"; path = "Target Support Files/Pods-TetopiTests/Pods-TetopiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C51211D367190B7389365DF9 /* Pods-TetopiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TetopiTests.release.xcconfig"; path = "Target Support Files/Pods-TetopiTests/Pods-TetopiTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6D5A2380F74D8C30A9D9507 /* Pods_TetopiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TetopiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67C75B29A6318167966D682 /* Pods-Tetopi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetopi.debug.xcconfig"; path = "Target Support Files/Pods-Tetopi/Pods-Tetopi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5541EAC6645DFE67AD5949 /* Pods_Tetopi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA2BB66444555E581ABF88F /* Pods_TetopiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +173,142 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBF5FB78F6C9C55D518F110 /* Pods_Tetopi_TetopiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EECFB51B3BA13C1D337D00F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F67C75B29A6318167966D682 /* Pods-Tetopi.debug.xcconfig */,
+				2C4006BFCC682A3E6C739DF3 /* Pods-Tetopi.release.xcconfig */,
+				7399CA192DE693A45D1E736C /* Pods-Tetopi-TetopiUITests.debug.xcconfig */,
+				3525296993AF03FF10C96720 /* Pods-Tetopi-TetopiUITests.release.xcconfig */,
+				C07B50878CE70675C972850E /* Pods-TetopiTests.debug.xcconfig */,
+				C51211D367190B7389365DF9 /* Pods-TetopiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A15B5938C330BAD611371B89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7458CEB01134B14FD86A2248 /* Pods_Tetopi.framework */,
+				629A2F05890A7A1C681AA3EE /* Pods_Tetopi_TetopiUITests.framework */,
+				E6D5A2380F74D8C30A9D9507 /* Pods_TetopiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5026DB026C7CD90005B4321 /* ArticleTerbaruListModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5026D8B26C7CD8A005B4321 /* Article.swift */,
+				A5026D8226C7CD8A005B4321 /* ArticleByLine.swift */,
+				A5026D8726C7CD8A005B4321 /* ArticleListModel.swift */,
+				A5026D8126C7CD8A005B4321 /* Category.swift */,
+				A5026D8826C7CD8A005B4321 /* Edition.swift */,
+				A5026D8426C7CD8A005B4321 /* FollowingUser.swift */,
+				A5026D8A26C7CD8A005B4321 /* Headline.swift */,
+				A5026D9626C7CD8B005B4321 /* Keyword.swift */,
+				A5026D8326C7CD8A005B4321 /* Large.swift */,
+				A5026D8026C7CD89005B4321 /* Medium.swift */,
+				A5026D8C26C7CD8A005B4321 /* MediumLarge.swift */,
+				A5026D8E26C7CD8A005B4321 /* Message.swift */,
+				A5026D8926C7CD8A005B4321 /* Meta.swift */,
+				A5026D8D26C7CD8A005B4321 /* Original.swift */,
+				A5026D9326C7CD8A005B4321 /* Page.swift */,
+				A5026D8F26C7CD8A005B4321 /* PhotographerName.swift */,
+				A5026D9726C7CD8B005B4321 /* PostTag.swift */,
+				A5026D8526C7CD8A005B4321 /* PostThumbnail.swift */,
+				A5026D8626C7CD8A005B4321 /* Print.swift */,
+				A5026D9526C7CD8B005B4321 /* Result.swift */,
+				A5026D9226C7CD8A005B4321 /* Size.swift */,
+				A5026D9126C7CD8A005B4321 /* Term.swift */,
+				A5026D9026C7CD8A005B4321 /* Thumbnail.swift */,
+				A5026D9426C7CD8A005B4321 /* ThumbnailMedium.swift */,
+			);
+			path = ArticleTerbaruListModel;
+			sourceTree = "<group>";
+		};
+		A5026DB326C7CDAA005B4321 /* TetopiModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DB126C7CDA3005B4321 /* TetopiModel.swift */,
+			);
+			path = TetopiModel;
+			sourceTree = "<group>";
+		};
+		A5026DB426C7CDBC005B4321 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DB326C7CDAA005B4321 /* TetopiModel */,
+				A5026DB026C7CD90005B4321 /* ArticleTerbaruListModel */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A5026DB726C7CE10005B4321 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DB526C7CDF4005B4321 /* ArticleListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A5026DB826C7CE20005B4321 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DB426C7CDBC005B4321 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A5026DC526C7CE36005B4321 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DBA26C7CE30005B4321 /* APIBuilder.swift */,
+				A5026DBC26C7CE31005B4321 /* ArticleListEndPoint.swift */,
+				A5026DBE26C7CE31005B4321 /* ArticleListService.swift */,
+				A5026DBB26C7CE31005B4321 /* ResultState.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A5026DCA26C7CE45005B4321 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DC726C7CE42005B4321 /* ErrorResponse.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A5026DCB26C7CE4F005B4321 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DCA26C7CE45005B4321 /* Helper */,
+				A5026DC526C7CE36005B4321 /* Network */,
+				A5026DB726C7CE10005B4321 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A5026DCE26C7D9DA005B4321 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */,
+				A5026DCF26C7DA18005B4321 /* Hind-Bold.ttc */,
+				A5026DD026C7DA18005B4321 /* Hind-Light.ttc */,
+				A5026DD226C7DA18005B4321 /* Hind-Medium.ttc */,
+				A5026DD126C7DA18005B4321 /* Hind-Regular.ttc */,
+				A5026DD326C7DA18005B4321 /* Hind-SemiBold.ttc */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		A59FE62C26C7CBA1005F2BCC = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +316,8 @@
 				A59FE64926C7CBA4005F2BCC /* TetopiTests */,
 				A59FE65426C7CBA4005F2BCC /* TetopiUITests */,
 				A59FE63626C7CBA1005F2BCC /* Products */,
+				7EECFB51B3BA13C1D337D00F /* Pods */,
+				A15B5938C330BAD611371B89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +334,10 @@
 		A59FE63726C7CBA1005F2BCC /* Tetopi */ = {
 			isa = PBXGroup;
 			children = (
+				A5026DCB26C7CE4F005B4321 /* Data */,
+				A5026DB826C7CE20005B4321 /* Domain */,
 				A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */,
+				A59FE69626C7CCD5005F2BCC /* Presentation */,
 				A59FE63A26C7CBA1005F2BCC /* ContentView.swift */,
 				A59FE63C26C7CBA4005F2BCC /* Assets.xcassets */,
 				A59FE64126C7CBA4005F2BCC /* Info.plist */,
@@ -130,6 +372,82 @@
 			path = TetopiUITests;
 			sourceTree = "<group>";
 		};
+		A59FE67126C7CBFB005F2BCC /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DCC26C7CF28005B4321 /* DashboardView.swift */,
+				A59FE66B26C7CBEF005F2BCC /* akunView.swift */,
+				A59FE66A26C7CBEF005F2BCC /* bookView.swift */,
+				A59FE66C26C7CBEF005F2BCC /* ePaperView.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		A59FE67626C7CC18005F2BCC /* ListArticleView */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE67226C7CC14005F2BCC /* ArticleListTerbaru.swift */,
+				A59FE67326C7CC14005F2BCC /* CardthumbItemView.swift */,
+			);
+			path = ListArticleView;
+			sourceTree = "<group>";
+		};
+		A59FE67B26C7CC2C005F2BCC /* TetopiView */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE67726C7CC28005F2BCC /* TetopiComper.swift */,
+				A59FE67826C7CC28005F2BCC /* TetopiFuper.swift */,
+			);
+			path = TetopiView;
+			sourceTree = "<group>";
+		};
+		A59FE67D26C7CC48005F2BCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE67626C7CC18005F2BCC /* ListArticleView */,
+				A59FE67126C7CBFB005F2BCC /* DashboardView */,
+				A59FE67B26C7CC2C005F2BCC /* TetopiView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A59FE68226C7CC5B005F2BCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE67E26C7CC53005F2BCC /* ArticleListTerbaruViewModel.swift */,
+				A59FE67F26C7CC53005F2BCC /* TetopiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A59FE68726C7CCA9005F2BCC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE68426C7CCA5005F2BCC /* Date.swift */,
+				A5026DD726C7DADC005B4321 /* FontExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A59FE69526C7CCCA005F2BCC /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DCE26C7D9DA005B4321 /* Font */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		A59FE69626C7CCD5005F2BCC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE69526C7CCCA005F2BCC /* Asset */,
+				A59FE68726C7CCA9005F2BCC /* Helper */,
+				A59FE68226C7CC5B005F2BCC /* ViewModel */,
+				A59FE67D26C7CC48005F2BCC /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +455,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A59FE65A26C7CBA4005F2BCC /* Build configuration list for PBXNativeTarget "Tetopi" */;
 			buildPhases = (
+				10701BB2E49E4216B3DFCD70 /* [CP] Check Pods Manifest.lock */,
 				A59FE63126C7CBA1005F2BCC /* Sources */,
 				A59FE63226C7CBA1005F2BCC /* Frameworks */,
 				A59FE63326C7CBA1005F2BCC /* Resources */,
+				15E9B724ADC1D2B5E4AA8A8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +474,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A59FE65D26C7CBA4005F2BCC /* Build configuration list for PBXNativeTarget "TetopiTests" */;
 			buildPhases = (
+				1C3D25FAEBEAFD75F45785CA /* [CP] Check Pods Manifest.lock */,
 				A59FE64226C7CBA4005F2BCC /* Sources */,
 				A59FE64326C7CBA4005F2BCC /* Frameworks */,
 				A59FE64426C7CBA4005F2BCC /* Resources */,
@@ -172,9 +493,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A59FE66026C7CBA4005F2BCC /* Build configuration list for PBXNativeTarget "TetopiUITests" */;
 			buildPhases = (
+				68CB83C4DC4EF786087C6A8A /* [CP] Check Pods Manifest.lock */,
 				A59FE64D26C7CBA4005F2BCC /* Sources */,
 				A59FE64E26C7CBA4005F2BCC /* Frameworks */,
 				A59FE64F26C7CBA4005F2BCC /* Resources */,
+				DFE64B2EA41D8D9595D8EED4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59FE64026C7CBA4005F2BCC /* Preview Assets.xcassets in Resources */,
+				A5026DDA26C7DCBB005B4321 /* PlayFairDisplay-Bold.ttf in Resources */,
 				A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +578,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10701BB2E49E4216B3DFCD70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tetopi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15E9B724ADC1D2B5E4AA8A8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tetopi/Pods-Tetopi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tetopi/Pods-Tetopi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tetopi/Pods-Tetopi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C3D25FAEBEAFD75F45785CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TetopiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68CB83C4DC4EF786087C6A8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tetopi-TetopiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE64B2EA41D8D9595D8EED4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A59FE63126C7CBA1005F2BCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5026DAF26C7CD8B005B4321 /* Size.swift in Sources */,
+				A59FE67526C7CC14005F2BCC /* ArticleListTerbaru.swift in Sources */,
+				A5026DA026C7CD8B005B4321 /* Keyword.swift in Sources */,
+				A5026DA926C7CD8B005B4321 /* ThumbnailMedium.swift in Sources */,
+				A5026DA326C7CD8B005B4321 /* ArticleByLine.swift in Sources */,
+				A5026DA526C7CD8B005B4321 /* ArticleListModel.swift in Sources */,
+				A5026DB626C7CDF4005B4321 /* ArticleListRepository.swift in Sources */,
+				A59FE67A26C7CC28005F2BCC /* TetopiFuper.swift in Sources */,
+				A5026DA226C7CD8B005B4321 /* Medium.swift in Sources */,
 				A59FE63B26C7CBA1005F2BCC /* ContentView.swift in Sources */,
+				A59FE67026C7CBEF005F2BCC /* akunView.swift in Sources */,
 				A59FE63926C7CBA1005F2BCC /* TetopiApp.swift in Sources */,
+				A5026DA126C7CD8B005B4321 /* Meta.swift in Sources */,
+				A5026DAA26C7CD8B005B4321 /* PhotographerName.swift in Sources */,
+				A5026DA426C7CD8B005B4321 /* Headline.swift in Sources */,
+				A5026DAD26C7CD8B005B4321 /* PostTag.swift in Sources */,
+				A5026DC126C7CE31005B4321 /* ArticleListService.swift in Sources */,
+				A5026DB226C7CDA3005B4321 /* TetopiModel.swift in Sources */,
+				A5026DA826C7CD8B005B4321 /* Article.swift in Sources */,
+				A5026DC926C7CE42005B4321 /* ErrorResponse.swift in Sources */,
+				A59FE67426C7CC14005F2BCC /* CardthumbItemView.swift in Sources */,
+				A59FE68026C7CC53005F2BCC /* ArticleListTerbaruViewModel.swift in Sources */,
+				A5026DD826C7DADC005B4321 /* FontExtension.swift in Sources */,
+				A5026DC426C7CE31005B4321 /* ArticleListEndPoint.swift in Sources */,
+				A59FE66E26C7CBEF005F2BCC /* ePaperView.swift in Sources */,
+				A5026DA726C7CD8B005B4321 /* Page.swift in Sources */,
+				A5026D9C26C7CD8B005B4321 /* Large.swift in Sources */,
+				A59FE68626C7CCA5005F2BCC /* Date.swift in Sources */,
+				A5026D9D26C7CD8B005B4321 /* Result.swift in Sources */,
+				A59FE68126C7CC53005F2BCC /* TetopiViewModel.swift in Sources */,
+				A5026D9F26C7CD8B005B4321 /* Category.swift in Sources */,
+				A5026D9826C7CD8B005B4321 /* Thumbnail.swift in Sources */,
+				A5026DCD26C7CF28005B4321 /* DashboardView.swift in Sources */,
+				A5026D9926C7CD8B005B4321 /* Edition.swift in Sources */,
+				A5026D9B26C7CD8B005B4321 /* Print.swift in Sources */,
+				A5026D9A26C7CD8B005B4321 /* MediumLarge.swift in Sources */,
+				A5026DC226C7CE31005B4321 /* ResultState.swift in Sources */,
+				A5026DAC26C7CD8B005B4321 /* PostThumbnail.swift in Sources */,
+				A5026DAB26C7CD8B005B4321 /* FollowingUser.swift in Sources */,
+				A5026D9E26C7CD8B005B4321 /* Message.swift in Sources */,
+				A59FE66F26C7CBEF005F2BCC /* bookView.swift in Sources */,
+				A5026DC326C7CE31005B4321 /* APIBuilder.swift in Sources */,
+				A5026DAE26C7CD8B005B4321 /* Term.swift in Sources */,
+				A5026DA626C7CD8B005B4321 /* Original.swift in Sources */,
+				A59FE67926C7CC28005F2BCC /* TetopiComper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +884,7 @@
 		};
 		A59FE65B26C7CBA4005F2BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67C75B29A6318167966D682 /* Pods-Tetopi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +907,7 @@
 		};
 		A59FE65C26C7CBA4005F2BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4006BFCC682A3E6C739DF3 /* Pods-Tetopi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +930,7 @@
 		};
 		A59FE65E26C7CBA4005F2BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07B50878CE70675C972850E /* Pods-TetopiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +953,7 @@
 		};
 		A59FE65F26C7CBA4005F2BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51211D367190B7389365DF9 /* Pods-TetopiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +976,7 @@
 		};
 		A59FE66126C7CBA4005F2BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7399CA192DE693A45D1E736C /* Pods-Tetopi-TetopiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +997,7 @@
 		};
 		A59FE66226C7CBA4005F2BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3525296993AF03FF10C96720 /* Pods-Tetopi-TetopiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

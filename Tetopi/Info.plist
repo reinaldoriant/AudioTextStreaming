@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PlayFairDisplay-Bold.ttf</string>
+		<string>Hind-Bold.ttc</string>
+		<string>Hind-Light.ttc</string>
+		<string>Hind-Medium.ttc</string>
+		<string>Hind-Regular.ttc</string>
+		<string>Hind-SemiBold.ttc</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

@@ -1,0 +1,1186 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0608DA73208D85FA413FFFEC3F64134F /* RemoteContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAAE0193B844AE120C256291BF4D28 /* RemoteContentView.swift */; };
+		0949CC7F5774D5F347D6964322CAA2B0 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D957422D380B416E668F9DF4E05C35B /* URLImage.swift */; };
+		0D1474C8D94404311AC72AB764491141 /* CoreDataModelDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C0471E45C45B052B7290F271347D /* CoreDataModelDescription.swift */; };
+		0D43AA29BBA0E77380CB0C4FBA0AE251 /* URLImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75BAB51DE66FED6F47984C831FF8AEA /* URLImageService.swift */; };
+		16699F9D97B3E6870C27A6A9FD883B69 /* CoreDataFetchIndexDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13648BE54ECEF82EF5392F48B3DC5B /* CoreDataFetchIndexDescription.swift */; };
+		1C2ADA251F5FFF6F1CA666B0B0483F75 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95AA61E4BEE12166B1C05C361106AC6 /* RemoteImage.swift */; };
+		2090443E4C34461220037205853921F0 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390B947A17C93E283BBECF11E2299070 /* ImageInfo.swift */; };
+		25538E8FDD6D8E9212408756A219C619 /* URLImageService+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C927A08FEEEF4CF6F53CA3766534CEA /* URLImageService+Decode.swift */; };
+		26C420EE01A6A0527F090DC6AF7CCB31 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798939CD20C417664F6EEFC7DE4533F /* File.swift */; };
+		26D707C11F19AC3DCD3AE61A4BDAE7EE /* DownloadPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E54C4FFC37A2304EF20ECEC6B5AFB /* DownloadPublisher.swift */; };
+		276C74CEC0AF273281FC7C2A224D88FA /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BEF1A5B5AC94A79BF9D3AE1CC7A1B /* Bundle+Extensions.swift */; };
+		286C26430A55E8835BF92783627B9690 /* URLImageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C918EFFCEC81FA336BFFB562B83A6EBF /* URLImageOptions.swift */; };
+		2A9C26695D440C548623C88EEDEA29A6 /* Pods-Tetopi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E68ACF1F4567805FC4B20101352CB358 /* Pods-Tetopi-dummy.m */; };
+		2ED6FD52B07EB0A6A8CB208B611AC110 /* URLImageService+RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4699C432306F33139A820B17E7B754B /* URLImageService+RemoteImage.swift */; };
+		33A8AB5647CD5EDDBA22E4AC5F52448E /* URLSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757F161EEF1A2CE06C5C4D37810EA73 /* URLSessionCoordinator.swift */; };
+		3667C7E7EA6F165853AECFFF1BAC29D5 /* URLImageService+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A859D3538C985765376C4A18A3F87B /* URLImageService+Extension.swift */; };
+		37F843D11A02BFB35C49594815727FE3 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B84B77E0FAC9BBD92A3484110F967B /* Download.swift */; };
+		3DB7A396E10E3751F06A7E16419BA569 /* RemoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984EED6A74AF3B94E8DE34341454751 /* RemoteContent.swift */; };
+		3E07DEEF69A6578724866BB909D2E729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		43390D29B76369CBB036D41DC50F2520 /* ImageDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDAA72B60A0ADA9A849451F304195D /* ImageDecoder.swift */; };
+		4CF8BE85CCEBF3043DD2E7139C510E98 /* Pods-Tetopi-TetopiUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F25B800EAC6691744C0B9AB3ABA13 /* Pods-Tetopi-TetopiUITests-dummy.m */; };
+		4D80DC7FC354A1F92DD15E0A1E5123BA /* CoreDataEntityDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30755D9D1A4106DBAF7B731FB5E3AD87 /* CoreDataEntityDescription.swift */; };
+		526737E785FD4DD78A8F09F7CD0259FE /* RemoteContentLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F699DAE9DDE5BE69FD0738A4F93EF47 /* RemoteContentLoadingState.swift */; };
+		5387B0B4CD8CE861DC7E564F96117CBC /* DownloadTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3B932BA11CF5903573D7B3D708153 /* DownloadTypes.swift */; };
+		625B030B772D2AFD1E8D6D051AE1229B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E430D52D34EDB665AD611BAB0C421F3 /* Utils.swift */; };
+		63DE507434C2D3AEEB291BEF267BBDC4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B036C42ADDB7BEEBF7309CEFD405730 /* ActivityIndicator.swift */; };
+		643CDEC839BCF7E5D64EDA466BEE11F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		67AACFA86E70033A666C6DA56C51F53F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		68DE3301879247FCED64AAF1E3C73599 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6499C22034A0BE2231D9BAF2B5B899F /* InMemoryCache.swift */; };
+		6A279869A22780F5E3D524B929124A46 /* Pods-Tetopi-TetopiUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF92D2AC3B7AA64C9DF77EA258A12CF0 /* Pods-Tetopi-TetopiUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72042EA612A70187BD080A3ABE823D0A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC574D604FB132423432B9CD2DED1F /* Log.swift */; };
+		7252DB84CB45E2E92103BD0921BB1E06 /* DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7183CE25FE5C594D54FCC2FFB77E086 /* DownloadTask.swift */; };
+		72BEC13710BFA056296835FCFE957388 /* URLImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2F0BC7419A92219A9F7BA0D1874906 /* URLImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		764AB125A68DD0CDB556B5C10F0EC550 /* URLImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C90B666837847FCD51EBF5022E7EBE7 /* URLImageError.swift */; };
+		767463AB9D39FD4316CE34E3179A9098 /* Download+URLImageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44FE7C6F69C7D494EDC5E770E31304B /* Download+URLImageOptions.swift */; };
+		86920ABE93B5A0AFD52D10CEC4B04D4A /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598561D11DCE01DE4E2A58DAF99121BB /* FileManager+Extensions.swift */; };
+		8A1D9DEE89E4BC859DF3650002EDC589 /* Pods-TetopiTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4339DFC3F82F577B9656869B6663392B /* Pods-TetopiTests-dummy.m */; };
+		8B4F404CB85F05CC64FAB16E6684DF54 /* URLImageService+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E97008ABF08E044EBAECA30585F102 /* URLImageService+Cache.swift */; };
+		92242975400D55665C9EA55472D89F23 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89846377B9B2AF8FC13305C87FD84AD /* Database.swift */; };
+		97F61942403B6CB9EEB727D4ABCE0971 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D50AB16F7C9623A682AFD21D53E2A9 /* DownloadManager.swift */; };
+		9C79F4FF6F359F799F0ECBAE23679C87 /* TransientImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751057EECC6CD5508DC3BCA2E133F03C /* TransientImage.swift */; };
+		A982C38598E94C590FDA164C606F1A15 /* DownloadProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10964ABBE6F71A6BA066F0B063CD0A /* DownloadProgress.swift */; };
+		AB3A9A182AC73A88E2DA60CBC56851EB /* ManagedObjectCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2433312673FC717F77ADEF5F276A110 /* ManagedObjectCodable.swift */; };
+		B89CAFFDAAFF17D8E44B166A988BC069 /* URLImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D9BD0AD2FF483C441EBD6315AE730F /* URLImage-dummy.m */; };
+		C0EE5E64B7024D737F427D0091AAEF5A /* PlainDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612F1320EEE3F952562651EA9D2935F9 /* PlainDatabase.swift */; };
+		D7748640672645E37712C1BB9EF42AB6 /* FileIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9037690AF5AC6D8A64360F8E5DE9C79 /* FileIndex.swift */; };
+		D9A610A635A8D10492E8A7C2E8BC9E04 /* URLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814A2973D2F80506A25EB6451E1C28C /* URLSessionDelegate.swift */; };
+		DD05F5EBDBC98E33EB8F4088902AC2CD /* Pods-Tetopi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B111A2493C10543E47BE9A48A06C907F /* Pods-Tetopi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A70372B639B325EC36C79C2831EAED /* CoreDataAttributeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE22D3BFC4F361FB68759FF5FE1F95 /* CoreDataAttributeDescription.swift */; };
+		EDDD5900A050DD844A4A6C32B7168E73 /* Pods-TetopiTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF21FFFC07173B6970B54D63361C2BFF /* Pods-TetopiTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F125C0CB0228E14C3F1F3744CF9DFA3A /* Image_Orientation+CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062730E02699FC4D5299F1C59FB02508 /* Image_Orientation+CGImagePropertyOrientation.swift */; };
+		F1DB92B47A3E11C168E2C6E68C7DFD9C /* RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B84CE1C118EE86B72F31EF4EF5F0 /* RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift */; };
+		F2D960F24866F2A0D3491790279AEA00 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D684EF6863E7BF8C7C46D38829AD84 /* DiskCache.swift */; };
+		FEC316BC31C13FE3662E4E58E9E8D794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		179BFFA4A6785B4B60E83408D319D38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59F0EC9E7C53B8F2B2B1AC59226250AB;
+			remoteInfo = URLImage;
+		};
+		CADABFDFBE51F343732045AF0316D21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59F0EC9E7C53B8F2B2B1AC59226250AB;
+			remoteInfo = URLImage;
+		};
+		F7CE2E147622E91F171120B8EDC4C46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C64BF359F69C0D786639F7AB6C55964;
+			remoteInfo = "Pods-Tetopi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0077BAE36B2B6CAE6247C984608CF723 /* Pods-Tetopi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tetopi.modulemap"; sourceTree = "<group>"; };
+		048E641CA9D58899ED1E3390AD2A3B20 /* Pods-Tetopi-TetopiUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tetopi-TetopiUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		062730E02699FC4D5299F1C59FB02508 /* Image_Orientation+CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Image_Orientation+CGImagePropertyOrientation.swift"; path = "Sources/URLImage/Common/Image_Orientation+CGImagePropertyOrientation.swift"; sourceTree = "<group>"; };
+		0AA1D9DA0F492AFF596B842C71F92F65 /* Pods-Tetopi-TetopiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tetopi-TetopiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0D0E024EAA99A97191A4D08CD6EA0FCC /* Pods-TetopiTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TetopiTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DFCB922AD6E86DC5D93E94B7CD6D71F /* Pods-Tetopi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tetopi-Info.plist"; sourceTree = "<group>"; };
+		138F25B800EAC6691744C0B9AB3ABA13 /* Pods-Tetopi-TetopiUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tetopi-TetopiUITests-dummy.m"; sourceTree = "<group>"; };
+		1C90B666837847FCD51EBF5022E7EBE7 /* URLImageError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLImageError.swift; path = Sources/URLImage/Common/URLImageError.swift; sourceTree = "<group>"; };
+		2757F161EEF1A2CE06C5C4D37810EA73 /* URLSessionCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionCoordinator.swift; path = Dependencies/Sources/DownloadManager/URLSession/URLSessionCoordinator.swift; sourceTree = "<group>"; };
+		2887F2E4A4C98BEF767A166683622593 /* URLImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URLImage.framework; path = URLImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2984EED6A74AF3B94E8DE34341454751 /* RemoteContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteContent.swift; path = Dependencies/Sources/RemoteContentView/RemoteContent/RemoteContent.swift; sourceTree = "<group>"; };
+		2D2F0BC7419A92219A9F7BA0D1874906 /* URLImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLImage-umbrella.h"; sourceTree = "<group>"; };
+		2F48C70FEF25BDB969C898228C367D18 /* Pods-TetopiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TetopiTests.release.xcconfig"; sourceTree = "<group>"; };
+		30755D9D1A4106DBAF7B731FB5E3AD87 /* CoreDataEntityDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataEntityDescription.swift; path = Dependencies/Sources/PlainDatabase/CoreDataModel/CoreDataEntityDescription.swift; sourceTree = "<group>"; };
+		37F1ADE2D52E48C24755941B3697B6F0 /* Pods-Tetopi-TetopiUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tetopi-TetopiUITests-frameworks.sh"; sourceTree = "<group>"; };
+		390B947A17C93E283BBECF11E2299070 /* ImageInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageInfo.swift; path = Sources/URLImage/Model/ImageInfo.swift; sourceTree = "<group>"; };
+		3C927A08FEEEF4CF6F53CA3766534CEA /* URLImageService+Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLImageService+Decode.swift"; path = "Sources/URLImage/URLImageService+Decode.swift"; sourceTree = "<group>"; };
+		3CF2DEE54F6ED0F91FFAE9B9F47377CD /* Pods-Tetopi-TetopiUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tetopi-TetopiUITests.modulemap"; sourceTree = "<group>"; };
+		4339DFC3F82F577B9656869B6663392B /* Pods-TetopiTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TetopiTests-dummy.m"; sourceTree = "<group>"; };
+		44FE22D3BFC4F361FB68759FF5FE1F95 /* CoreDataAttributeDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataAttributeDescription.swift; path = Dependencies/Sources/PlainDatabase/CoreDataModel/CoreDataAttributeDescription.swift; sourceTree = "<group>"; };
+		45145E868BA3E92DC617686C1D9CFC07 /* Pods_Tetopi_TetopiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tetopi_TetopiUITests.framework; path = "Pods-Tetopi-TetopiUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E7AC3091FB0E0B24F63393BE1840C2 /* Pods-Tetopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tetopi.release.xcconfig"; sourceTree = "<group>"; };
+		4BBB5A250F80C2FD9C895D7180AE575C /* URLImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLImage.debug.xcconfig; sourceTree = "<group>"; };
+		4F699DAE9DDE5BE69FD0738A4F93EF47 /* RemoteContentLoadingState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteContentLoadingState.swift; path = Dependencies/Sources/RemoteContentView/RemoteContent/RemoteContentLoadingState.swift; sourceTree = "<group>"; };
+		598561D11DCE01DE4E2A58DAF99121BB /* FileManager+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+Extensions.swift"; path = "Dependencies/Sources/Common/FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		5DEDAA72B60A0ADA9A849451F304195D /* ImageDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDecoder.swift; path = Dependencies/Sources/ImageDecoder/ImageDecoder.swift; sourceTree = "<group>"; };
+		612F1320EEE3F952562651EA9D2935F9 /* PlainDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlainDatabase.swift; path = Dependencies/Sources/PlainDatabase/PlainDatabase.swift; sourceTree = "<group>"; };
+		6A365A1B2267A9075CB1C41ED7F9D6A2 /* Pods-TetopiTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TetopiTests-Info.plist"; sourceTree = "<group>"; };
+		6E0EFBA2CD1ED7C3DE9B2EFEEFB5C7D5 /* Pods-TetopiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TetopiTests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		751057EECC6CD5508DC3BCA2E133F03C /* TransientImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransientImage.swift; path = Sources/URLImage/Model/TransientImage.swift; sourceTree = "<group>"; };
+		7E430D52D34EDB665AD611BAB0C421F3 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Dependencies/Sources/DownloadManager/Common/Utils.swift; sourceTree = "<group>"; };
+		80E97008ABF08E044EBAECA30585F102 /* URLImageService+Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLImageService+Cache.swift"; path = "Sources/URLImage/URLImageService+Cache.swift"; sourceTree = "<group>"; };
+		8385209FA1D99C461D4429047F6A0C98 /* Pods-Tetopi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tetopi.debug.xcconfig"; sourceTree = "<group>"; };
+		84EAAE0193B844AE120C256291BF4D28 /* RemoteContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteContentView.swift; path = Dependencies/Sources/RemoteContentView/RemoteContentView.swift; sourceTree = "<group>"; };
+		8B036C42ADDB7BEEBF7309CEFD405730 /* ActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Dependencies/Sources/RemoteContentView/Auxiliary/ActivityIndicator.swift; sourceTree = "<group>"; };
+		8C9222F98550589898B9C2E9E1E9EE4E /* Pods-Tetopi-TetopiUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tetopi-TetopiUITests-Info.plist"; sourceTree = "<group>"; };
+		90B84B77E0FAC9BBD92A3484110F967B /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Dependencies/Sources/DownloadManager/Download/Download.swift; sourceTree = "<group>"; };
+		932BEF1A5B5AC94A79BF9D3AE1CC7A1B /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Dependencies/Sources/FileIndex/Common/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		93B069D171478FC306E70EFA7BB43C67 /* URLImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URLImage.modulemap; sourceTree = "<group>"; };
+		96472E50B6D3FAB171DA9E04EAFFDA29 /* Pods-Tetopi-TetopiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tetopi-TetopiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D00C0471E45C45B052B7290F271347D /* CoreDataModelDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataModelDescription.swift; path = Dependencies/Sources/PlainDatabase/CoreDataModel/CoreDataModelDescription.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D957422D380B416E668F9DF4E05C35B /* URLImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLImage.swift; path = Sources/URLImage/URLImage.swift; sourceTree = "<group>"; };
+		9E38D8333D80030E8F03580B9B7FE144 /* Pods-TetopiTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TetopiTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2433312673FC717F77ADEF5F276A110 /* ManagedObjectCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagedObjectCodable.swift; path = Dependencies/Sources/PlainDatabase/CoreDataModel/ManagedObjectCodable.swift; sourceTree = "<group>"; };
+		A3A94389AF4C6336ED065531B64A7D10 /* Pods-TetopiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TetopiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4699C432306F33139A820B17E7B754B /* URLImageService+RemoteImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLImageService+RemoteImage.swift"; path = "Sources/URLImage/URLImageService+RemoteImage.swift"; sourceTree = "<group>"; };
+		A6E31380C7EACF4447A0281EB3254FBB /* Pods_TetopiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TetopiTests.framework; path = "Pods-TetopiTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A798939CD20C417664F6EEFC7DE4533F /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = Dependencies/Sources/FileIndex/File.swift; sourceTree = "<group>"; };
+		A95AA61E4BEE12166B1C05C361106AC6 /* RemoteImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteImage.swift; path = Sources/URLImage/Model/RemoteImage.swift; sourceTree = "<group>"; };
+		AD13648BE54ECEF82EF5392F48B3DC5B /* CoreDataFetchIndexDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataFetchIndexDescription.swift; path = Dependencies/Sources/PlainDatabase/CoreDataModel/CoreDataFetchIndexDescription.swift; sourceTree = "<group>"; };
+		AF21FFFC07173B6970B54D63361C2BFF /* Pods-TetopiTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TetopiTests-umbrella.h"; sourceTree = "<group>"; };
+		B0A859D3538C985765376C4A18A3F87B /* URLImageService+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLImageService+Extension.swift"; path = "Sources/URLImage/URLImageService+Extension.swift"; sourceTree = "<group>"; };
+		B111A2493C10543E47BE9A48A06C907F /* Pods-Tetopi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tetopi-umbrella.h"; sourceTree = "<group>"; };
+		B1C082AC5A0B8522286E89AD4EBE6A9F /* Pods-Tetopi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tetopi-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B89846377B9B2AF8FC13305C87FD84AD /* Database.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Database.swift; path = Dependencies/Sources/PlainDatabase/Database.swift; sourceTree = "<group>"; };
+		B90B1D613E0211D6E05A854F0B9D1F27 /* Pods-Tetopi-TetopiUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tetopi-TetopiUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BAC42227E1605171C4365A10F4A0F2DA /* URLImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLImage.release.xcconfig; sourceTree = "<group>"; };
+		C0D9BD0AD2FF483C441EBD6315AE730F /* URLImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URLImage-dummy.m"; sourceTree = "<group>"; };
+		C145A09F7209647BCB042BC279CA2E77 /* Pods-Tetopi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tetopi-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1D50AB16F7C9623A682AFD21D53E2A9 /* DownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadManager.swift; path = Dependencies/Sources/DownloadManager/DownloadManager.swift; sourceTree = "<group>"; };
+		C44FE7C6F69C7D494EDC5E770E31304B /* Download+URLImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Download+URLImageOptions.swift"; path = "Sources/URLImage/Common/Download+URLImageOptions.swift"; sourceTree = "<group>"; };
+		C9037690AF5AC6D8A64360F8E5DE9C79 /* FileIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileIndex.swift; path = Dependencies/Sources/FileIndex/FileIndex.swift; sourceTree = "<group>"; };
+		C918EFFCEC81FA336BFFB562B83A6EBF /* URLImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLImageOptions.swift; path = Sources/URLImage/URLImageOptions.swift; sourceTree = "<group>"; };
+		CE17B84CE1C118EE86B72F31EF4EF5F0 /* RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift"; path = "Sources/URLImage/Common/RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift"; sourceTree = "<group>"; };
+		D1F3B932BA11CF5903573D7B3D708153 /* DownloadTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadTypes.swift; path = Dependencies/Sources/DownloadManager/Download/DownloadTypes.swift; sourceTree = "<group>"; };
+		D6499C22034A0BE2231D9BAF2B5B899F /* InMemoryCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryCache.swift; path = Sources/URLImage/Cache/InMemoryCache.swift; sourceTree = "<group>"; };
+		D814A2973D2F80506A25EB6451E1C28C /* URLSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionDelegate.swift; path = Dependencies/Sources/DownloadManager/URLSession/URLSessionDelegate.swift; sourceTree = "<group>"; };
+		DB10964ABBE6F71A6BA066F0B063CD0A /* DownloadProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadProgress.swift; path = Dependencies/Sources/DownloadManager/Common/DownloadProgress.swift; sourceTree = "<group>"; };
+		DF92D2AC3B7AA64C9DF77EA258A12CF0 /* Pods-Tetopi-TetopiUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tetopi-TetopiUITests-umbrella.h"; sourceTree = "<group>"; };
+		E68ACF1F4567805FC4B20101352CB358 /* Pods-Tetopi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tetopi-dummy.m"; sourceTree = "<group>"; };
+		E7183CE25FE5C594D54FCC2FFB77E086 /* DownloadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadTask.swift; path = Dependencies/Sources/DownloadManager/Download/DownloadTask.swift; sourceTree = "<group>"; };
+		E75BAB51DE66FED6F47984C831FF8AEA /* URLImageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLImageService.swift; path = Sources/URLImage/URLImageService.swift; sourceTree = "<group>"; };
+		E7D684EF6863E7BF8C7C46D38829AD84 /* DiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskCache.swift; path = Sources/URLImage/Cache/DiskCache.swift; sourceTree = "<group>"; };
+		E9CA9489846FD6E928332A154D51FF41 /* Pods-Tetopi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tetopi-frameworks.sh"; sourceTree = "<group>"; };
+		EBA69F3DF8965767BA1B13E0B876101C /* URLImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "URLImage-Info.plist"; sourceTree = "<group>"; };
+		EC8E54C4FFC37A2304EF20ECEC6B5AFB /* DownloadPublisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadPublisher.swift; path = Dependencies/Sources/DownloadManager/Download/DownloadPublisher.swift; sourceTree = "<group>"; };
+		F1F2FA5018CCFDD887CCD071B0534328 /* Pods_Tetopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tetopi.framework; path = "Pods-Tetopi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AC574D604FB132423432B9CD2DED1F /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Dependencies/Sources/Log/Log.swift; sourceTree = "<group>"; };
+		FD32E1E745EDA021754012BA14A8F1DC /* URLImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLImage-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5369564699D8695CF25385446954566F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AACFA86E70033A666C6DA56C51F53F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A362263793DAA057D490462C9BE6DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E07DEEF69A6578724866BB909D2E729 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC6EFBFBBA5BE2606D8AAF348B2945B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643CDEC839BCF7E5D64EDA466BEE11F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7005491D1CE41B4E006578D07510D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC316BC31C13FE3662E4E58E9E8D794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34CA1B5C659B288A020D29989C0078E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F2FA5018CCFDD887CCD071B0534328 /* Pods_Tetopi.framework */,
+				45145E868BA3E92DC617686C1D9CFC07 /* Pods_Tetopi_TetopiUITests.framework */,
+				A6E31380C7EACF4447A0281EB3254FBB /* Pods_TetopiTests.framework */,
+				2887F2E4A4C98BEF767A166683622593 /* URLImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		361BC51173D545089E45A2377ABBF5D0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FF3E7B23B85B72E7E68AB93C7D928B3 /* Pods-Tetopi */,
+				4A01265A4D60F36577C5768A63F0C3E4 /* Pods-Tetopi-TetopiUITests */,
+				72CC4680A667FB9709E5FDBE2FBEACD7 /* Pods-TetopiTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		389489244C772CC9CB27985702B20915 /* FileIndex */ = {
+			isa = PBXGroup;
+			children = (
+				932BEF1A5B5AC94A79BF9D3AE1CC7A1B /* Bundle+Extensions.swift */,
+				A798939CD20C417664F6EEFC7DE4533F /* File.swift */,
+				C9037690AF5AC6D8A64360F8E5DE9C79 /* FileIndex.swift */,
+			);
+			name = FileIndex;
+			sourceTree = "<group>";
+		};
+		3B3BB1A89403E85DEE537132BE852EFE /* RemoteContentView */ = {
+			isa = PBXGroup;
+			children = (
+				8B036C42ADDB7BEEBF7309CEFD405730 /* ActivityIndicator.swift */,
+				2984EED6A74AF3B94E8DE34341454751 /* RemoteContent.swift */,
+				4F699DAE9DDE5BE69FD0738A4F93EF47 /* RemoteContentLoadingState.swift */,
+				84EAAE0193B844AE120C256291BF4D28 /* RemoteContentView.swift */,
+			);
+			name = RemoteContentView;
+			sourceTree = "<group>";
+		};
+		3FF3E7B23B85B72E7E68AB93C7D928B3 /* Pods-Tetopi */ = {
+			isa = PBXGroup;
+			children = (
+				0077BAE36B2B6CAE6247C984608CF723 /* Pods-Tetopi.modulemap */,
+				B1C082AC5A0B8522286E89AD4EBE6A9F /* Pods-Tetopi-acknowledgements.markdown */,
+				C145A09F7209647BCB042BC279CA2E77 /* Pods-Tetopi-acknowledgements.plist */,
+				E68ACF1F4567805FC4B20101352CB358 /* Pods-Tetopi-dummy.m */,
+				E9CA9489846FD6E928332A154D51FF41 /* Pods-Tetopi-frameworks.sh */,
+				0DFCB922AD6E86DC5D93E94B7CD6D71F /* Pods-Tetopi-Info.plist */,
+				B111A2493C10543E47BE9A48A06C907F /* Pods-Tetopi-umbrella.h */,
+				8385209FA1D99C461D4429047F6A0C98 /* Pods-Tetopi.debug.xcconfig */,
+				46E7AC3091FB0E0B24F63393BE1840C2 /* Pods-Tetopi.release.xcconfig */,
+			);
+			name = "Pods-Tetopi";
+			path = "Target Support Files/Pods-Tetopi";
+			sourceTree = "<group>";
+		};
+		4A01265A4D60F36577C5768A63F0C3E4 /* Pods-Tetopi-TetopiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF2DEE54F6ED0F91FFAE9B9F47377CD /* Pods-Tetopi-TetopiUITests.modulemap */,
+				048E641CA9D58899ED1E3390AD2A3B20 /* Pods-Tetopi-TetopiUITests-acknowledgements.markdown */,
+				B90B1D613E0211D6E05A854F0B9D1F27 /* Pods-Tetopi-TetopiUITests-acknowledgements.plist */,
+				138F25B800EAC6691744C0B9AB3ABA13 /* Pods-Tetopi-TetopiUITests-dummy.m */,
+				37F1ADE2D52E48C24755941B3697B6F0 /* Pods-Tetopi-TetopiUITests-frameworks.sh */,
+				8C9222F98550589898B9C2E9E1E9EE4E /* Pods-Tetopi-TetopiUITests-Info.plist */,
+				DF92D2AC3B7AA64C9DF77EA258A12CF0 /* Pods-Tetopi-TetopiUITests-umbrella.h */,
+				96472E50B6D3FAB171DA9E04EAFFDA29 /* Pods-Tetopi-TetopiUITests.debug.xcconfig */,
+				0AA1D9DA0F492AFF596B842C71F92F65 /* Pods-Tetopi-TetopiUITests.release.xcconfig */,
+			);
+			name = "Pods-Tetopi-TetopiUITests";
+			path = "Target Support Files/Pods-Tetopi-TetopiUITests";
+			sourceTree = "<group>";
+		};
+		5075DDF89D3BB7DD226E3BA087AEF96C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F35A195D9D1BA4760F0E2391168FA3 /* URLImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A087491F95C30A1C86AD62B3FCCC0C9 /* PlainDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				44FE22D3BFC4F361FB68759FF5FE1F95 /* CoreDataAttributeDescription.swift */,
+				30755D9D1A4106DBAF7B731FB5E3AD87 /* CoreDataEntityDescription.swift */,
+				AD13648BE54ECEF82EF5392F48B3DC5B /* CoreDataFetchIndexDescription.swift */,
+				9D00C0471E45C45B052B7290F271347D /* CoreDataModelDescription.swift */,
+				B89846377B9B2AF8FC13305C87FD84AD /* Database.swift */,
+				A2433312673FC717F77ADEF5F276A110 /* ManagedObjectCodable.swift */,
+				612F1320EEE3F952562651EA9D2935F9 /* PlainDatabase.swift */,
+			);
+			name = PlainDatabase;
+			sourceTree = "<group>";
+		};
+		6896E48DF1A50BE469740426E4F82D01 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC574D604FB132423432B9CD2DED1F /* Log.swift */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
+		72CC4680A667FB9709E5FDBE2FBEACD7 /* Pods-TetopiTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0EFBA2CD1ED7C3DE9B2EFEEFB5C7D5 /* Pods-TetopiTests.modulemap */,
+				9E38D8333D80030E8F03580B9B7FE144 /* Pods-TetopiTests-acknowledgements.markdown */,
+				0D0E024EAA99A97191A4D08CD6EA0FCC /* Pods-TetopiTests-acknowledgements.plist */,
+				4339DFC3F82F577B9656869B6663392B /* Pods-TetopiTests-dummy.m */,
+				6A365A1B2267A9075CB1C41ED7F9D6A2 /* Pods-TetopiTests-Info.plist */,
+				AF21FFFC07173B6970B54D63361C2BFF /* Pods-TetopiTests-umbrella.h */,
+				A3A94389AF4C6336ED065531B64A7D10 /* Pods-TetopiTests.debug.xcconfig */,
+				2F48C70FEF25BDB969C898228C367D18 /* Pods-TetopiTests.release.xcconfig */,
+			);
+			name = "Pods-TetopiTests";
+			path = "Target Support Files/Pods-TetopiTests";
+			sourceTree = "<group>";
+		};
+		8A6C6A41873C721141CD1B53FD21C1A9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				598561D11DCE01DE4E2A58DAF99121BB /* FileManager+Extensions.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		9614BD1AF83B9699A53DBA965BDBF1E2 /* ImageDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				5DEDAA72B60A0ADA9A849451F304195D /* ImageDecoder.swift */,
+			);
+			name = ImageDecoder;
+			sourceTree = "<group>";
+		};
+		B45CBF5D412BCFF34904D5BD511C9157 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93B069D171478FC306E70EFA7BB43C67 /* URLImage.modulemap */,
+				C0D9BD0AD2FF483C441EBD6315AE730F /* URLImage-dummy.m */,
+				EBA69F3DF8965767BA1B13E0B876101C /* URLImage-Info.plist */,
+				FD32E1E745EDA021754012BA14A8F1DC /* URLImage-prefix.pch */,
+				2D2F0BC7419A92219A9F7BA0D1874906 /* URLImage-umbrella.h */,
+				4BBB5A250F80C2FD9C895D7180AE575C /* URLImage.debug.xcconfig */,
+				BAC42227E1605171C4365A10F4A0F2DA /* URLImage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/URLImage";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				5075DDF89D3BB7DD226E3BA087AEF96C /* Pods */,
+				34CA1B5C659B288A020D29989C0078E0 /* Products */,
+				361BC51173D545089E45A2377ABBF5D0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8F35A195D9D1BA4760F0E2391168FA3 /* URLImage */ = {
+			isa = PBXGroup;
+			children = (
+				E7D684EF6863E7BF8C7C46D38829AD84 /* DiskCache.swift */,
+				C44FE7C6F69C7D494EDC5E770E31304B /* Download+URLImageOptions.swift */,
+				062730E02699FC4D5299F1C59FB02508 /* Image_Orientation+CGImagePropertyOrientation.swift */,
+				390B947A17C93E283BBECF11E2299070 /* ImageInfo.swift */,
+				D6499C22034A0BE2231D9BAF2B5B899F /* InMemoryCache.swift */,
+				CE17B84CE1C118EE86B72F31EF4EF5F0 /* RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift */,
+				A95AA61E4BEE12166B1C05C361106AC6 /* RemoteImage.swift */,
+				751057EECC6CD5508DC3BCA2E133F03C /* TransientImage.swift */,
+				9D957422D380B416E668F9DF4E05C35B /* URLImage.swift */,
+				1C90B666837847FCD51EBF5022E7EBE7 /* URLImageError.swift */,
+				C918EFFCEC81FA336BFFB562B83A6EBF /* URLImageOptions.swift */,
+				E75BAB51DE66FED6F47984C831FF8AEA /* URLImageService.swift */,
+				80E97008ABF08E044EBAECA30585F102 /* URLImageService+Cache.swift */,
+				3C927A08FEEEF4CF6F53CA3766534CEA /* URLImageService+Decode.swift */,
+				B0A859D3538C985765376C4A18A3F87B /* URLImageService+Extension.swift */,
+				A4699C432306F33139A820B17E7B754B /* URLImageService+RemoteImage.swift */,
+				8A6C6A41873C721141CD1B53FD21C1A9 /* Common */,
+				F9020647791A6B45D3549D6D90651776 /* DownloadManager */,
+				389489244C772CC9CB27985702B20915 /* FileIndex */,
+				9614BD1AF83B9699A53DBA965BDBF1E2 /* ImageDecoder */,
+				6896E48DF1A50BE469740426E4F82D01 /* Log */,
+				5A087491F95C30A1C86AD62B3FCCC0C9 /* PlainDatabase */,
+				3B3BB1A89403E85DEE537132BE852EFE /* RemoteContentView */,
+				B45CBF5D412BCFF34904D5BD511C9157 /* Support Files */,
+			);
+			name = URLImage;
+			path = URLImage;
+			sourceTree = "<group>";
+		};
+		F9020647791A6B45D3549D6D90651776 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				90B84B77E0FAC9BBD92A3484110F967B /* Download.swift */,
+				C1D50AB16F7C9623A682AFD21D53E2A9 /* DownloadManager.swift */,
+				DB10964ABBE6F71A6BA066F0B063CD0A /* DownloadProgress.swift */,
+				EC8E54C4FFC37A2304EF20ECEC6B5AFB /* DownloadPublisher.swift */,
+				E7183CE25FE5C594D54FCC2FFB77E086 /* DownloadTask.swift */,
+				D1F3B932BA11CF5903573D7B3D708153 /* DownloadTypes.swift */,
+				2757F161EEF1A2CE06C5C4D37810EA73 /* URLSessionCoordinator.swift */,
+				D814A2973D2F80506A25EB6451E1C28C /* URLSessionDelegate.swift */,
+				7E430D52D34EDB665AD611BAB0C421F3 /* Utils.swift */,
+			);
+			name = DownloadManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38A007405502AEB2CB2F8B23D867906A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD05F5EBDBC98E33EB8F4088902AC2CD /* Pods-Tetopi-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38C800A74382A3B79C1DEDA8B0566EBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A279869A22780F5E3D524B929124A46 /* Pods-Tetopi-TetopiUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A004576362672AFA9451DC90A6FCB3DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BEC13710BFA056296835FCFE957388 /* URLImage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC1E1190778E2D6E5F96037E228502B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDD5900A050DD844A4A6C32B7168E73 /* Pods-TetopiTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59F0EC9E7C53B8F2B2B1AC59226250AB /* URLImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D170B662FD01798B3CA69767A87479 /* Build configuration list for PBXNativeTarget "URLImage" */;
+			buildPhases = (
+				A004576362672AFA9451DC90A6FCB3DF /* Headers */,
+				C8295D7FC054EAD73EC60E52754951E1 /* Sources */,
+				FC6EFBFBBA5BE2606D8AAF348B2945B2 /* Frameworks */,
+				A5DA6750C2A7298DF6CA2CFDD88C2D52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URLImage;
+			productName = URLImage;
+			productReference = 2887F2E4A4C98BEF767A166683622593 /* URLImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C64BF359F69C0D786639F7AB6C55964 /* Pods-Tetopi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 596BD79E2D6E750BEFBBB2A87D61F5CD /* Build configuration list for PBXNativeTarget "Pods-Tetopi" */;
+			buildPhases = (
+				38A007405502AEB2CB2F8B23D867906A /* Headers */,
+				035AFE49581DCD5CAAD1D1CEAC27C45A /* Sources */,
+				FC7005491D1CE41B4E006578D07510D1 /* Frameworks */,
+				E6B8A1F19C7AC44A9CCB05435332867F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5664144DF40345240F147CE6BFA339E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tetopi";
+			productName = "Pods-Tetopi";
+			productReference = F1F2FA5018CCFDD887CCD071B0534328 /* Pods_Tetopi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9BABF3B104FC68AC567AF18B91D8264E /* Pods-TetopiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1FFAF863AD60C2BA7C0D7063CA1164 /* Build configuration list for PBXNativeTarget "Pods-TetopiTests" */;
+			buildPhases = (
+				FCC1E1190778E2D6E5F96037E228502B /* Headers */,
+				F8A5DEDF02267DEB5F9190691ED08CF0 /* Sources */,
+				5369564699D8695CF25385446954566F /* Frameworks */,
+				F9411AB99B4B88FAA183EF8247993E77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBEA99DA839DB44E5DCFBEFCD0A8138E /* PBXTargetDependency */,
+			);
+			name = "Pods-TetopiTests";
+			productName = "Pods-TetopiTests";
+			productReference = A6E31380C7EACF4447A0281EB3254FBB /* Pods_TetopiTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C72B33033BA9B18248378AA65BDF0AC3 /* Pods-Tetopi-TetopiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8622C54A5B65048A9CF4898D06AC8628 /* Build configuration list for PBXNativeTarget "Pods-Tetopi-TetopiUITests" */;
+			buildPhases = (
+				38C800A74382A3B79C1DEDA8B0566EBF /* Headers */,
+				92A1FBE7B67C92F34EE2907AB81A6051 /* Sources */,
+				9A362263793DAA057D490462C9BE6DBD /* Frameworks */,
+				C66FBAFFCD6DCA2CF7D16651EF8D0D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A95B1545A63C94DB980439D8AF75003E /* PBXTargetDependency */,
+			);
+			name = "Pods-Tetopi-TetopiUITests";
+			productName = "Pods-Tetopi-TetopiUITests";
+			productReference = 45145E868BA3E92DC617686C1D9CFC07 /* Pods_Tetopi_TetopiUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 34CA1B5C659B288A020D29989C0078E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C64BF359F69C0D786639F7AB6C55964 /* Pods-Tetopi */,
+				C72B33033BA9B18248378AA65BDF0AC3 /* Pods-Tetopi-TetopiUITests */,
+				9BABF3B104FC68AC567AF18B91D8264E /* Pods-TetopiTests */,
+				59F0EC9E7C53B8F2B2B1AC59226250AB /* URLImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5DA6750C2A7298DF6CA2CFDD88C2D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66FBAFFCD6DCA2CF7D16651EF8D0D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B8A1F19C7AC44A9CCB05435332867F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9411AB99B4B88FAA183EF8247993E77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		035AFE49581DCD5CAAD1D1CEAC27C45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C26695D440C548623C88EEDEA29A6 /* Pods-Tetopi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A1FBE7B67C92F34EE2907AB81A6051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF8BE85CCEBF3043DD2E7139C510E98 /* Pods-Tetopi-TetopiUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8295D7FC054EAD73EC60E52754951E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DE507434C2D3AEEB291BEF267BBDC4 /* ActivityIndicator.swift in Sources */,
+				276C74CEC0AF273281FC7C2A224D88FA /* Bundle+Extensions.swift in Sources */,
+				E1A70372B639B325EC36C79C2831EAED /* CoreDataAttributeDescription.swift in Sources */,
+				4D80DC7FC354A1F92DD15E0A1E5123BA /* CoreDataEntityDescription.swift in Sources */,
+				16699F9D97B3E6870C27A6A9FD883B69 /* CoreDataFetchIndexDescription.swift in Sources */,
+				0D1474C8D94404311AC72AB764491141 /* CoreDataModelDescription.swift in Sources */,
+				92242975400D55665C9EA55472D89F23 /* Database.swift in Sources */,
+				F2D960F24866F2A0D3491790279AEA00 /* DiskCache.swift in Sources */,
+				767463AB9D39FD4316CE34E3179A9098 /* Download+URLImageOptions.swift in Sources */,
+				37F843D11A02BFB35C49594815727FE3 /* Download.swift in Sources */,
+				97F61942403B6CB9EEB727D4ABCE0971 /* DownloadManager.swift in Sources */,
+				A982C38598E94C590FDA164C606F1A15 /* DownloadProgress.swift in Sources */,
+				26D707C11F19AC3DCD3AE61A4BDAE7EE /* DownloadPublisher.swift in Sources */,
+				7252DB84CB45E2E92103BD0921BB1E06 /* DownloadTask.swift in Sources */,
+				5387B0B4CD8CE861DC7E564F96117CBC /* DownloadTypes.swift in Sources */,
+				26C420EE01A6A0527F090DC6AF7CCB31 /* File.swift in Sources */,
+				D7748640672645E37712C1BB9EF42AB6 /* FileIndex.swift in Sources */,
+				86920ABE93B5A0AFD52D10CEC4B04D4A /* FileManager+Extensions.swift in Sources */,
+				F125C0CB0228E14C3F1F3744CF9DFA3A /* Image_Orientation+CGImagePropertyOrientation.swift in Sources */,
+				43390D29B76369CBB036D41DC50F2520 /* ImageDecoder.swift in Sources */,
+				2090443E4C34461220037205853921F0 /* ImageInfo.swift in Sources */,
+				68DE3301879247FCED64AAF1E3C73599 /* InMemoryCache.swift in Sources */,
+				72042EA612A70187BD080A3ABE823D0A /* Log.swift in Sources */,
+				AB3A9A182AC73A88E2DA60CBC56851EB /* ManagedObjectCodable.swift in Sources */,
+				C0EE5E64B7024D737F427D0091AAEF5A /* PlainDatabase.swift in Sources */,
+				3DB7A396E10E3751F06A7E16419BA569 /* RemoteContent.swift in Sources */,
+				526737E785FD4DD78A8F09F7CD0259FE /* RemoteContentLoadingState.swift in Sources */,
+				0608DA73208D85FA413FFFEC3F64134F /* RemoteContentView.swift in Sources */,
+				F1DB92B47A3E11C168E2C6E68C7DFD9C /* RemoteContentViewLoadOptions+URLImageOptions_LoadOptions.swift in Sources */,
+				1C2ADA251F5FFF6F1CA666B0B0483F75 /* RemoteImage.swift in Sources */,
+				9C79F4FF6F359F799F0ECBAE23679C87 /* TransientImage.swift in Sources */,
+				B89CAFFDAAFF17D8E44B166A988BC069 /* URLImage-dummy.m in Sources */,
+				0949CC7F5774D5F347D6964322CAA2B0 /* URLImage.swift in Sources */,
+				764AB125A68DD0CDB556B5C10F0EC550 /* URLImageError.swift in Sources */,
+				286C26430A55E8835BF92783627B9690 /* URLImageOptions.swift in Sources */,
+				8B4F404CB85F05CC64FAB16E6684DF54 /* URLImageService+Cache.swift in Sources */,
+				25538E8FDD6D8E9212408756A219C619 /* URLImageService+Decode.swift in Sources */,
+				3667C7E7EA6F165853AECFFF1BAC29D5 /* URLImageService+Extension.swift in Sources */,
+				2ED6FD52B07EB0A6A8CB208B611AC110 /* URLImageService+RemoteImage.swift in Sources */,
+				0D43AA29BBA0E77380CB0C4FBA0AE251 /* URLImageService.swift in Sources */,
+				33A8AB5647CD5EDDBA22E4AC5F52448E /* URLSessionCoordinator.swift in Sources */,
+				D9A610A635A8D10492E8A7C2E8BC9E04 /* URLSessionDelegate.swift in Sources */,
+				625B030B772D2AFD1E8D6D051AE1229B /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A5DEDF02267DEB5F9190691ED08CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1D9DEE89E4BC859DF3650002EDC589 /* Pods-TetopiTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5664144DF40345240F147CE6BFA339E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = URLImage;
+			target = 59F0EC9E7C53B8F2B2B1AC59226250AB /* URLImage */;
+			targetProxy = CADABFDFBE51F343732045AF0316D21A /* PBXContainerItemProxy */;
+		};
+		A95B1545A63C94DB980439D8AF75003E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = URLImage;
+			target = 59F0EC9E7C53B8F2B2B1AC59226250AB /* URLImage */;
+			targetProxy = 179BFFA4A6785B4B60E83408D319D38E /* PBXContainerItemProxy */;
+		};
+		BBEA99DA839DB44E5DCFBEFCD0A8138E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tetopi";
+			target = 6C64BF359F69C0D786639F7AB6C55964 /* Pods-Tetopi */;
+			targetProxy = F7CE2E147622E91F171120B8EDC4C46D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14FA38818ACD9CD91A00CAD6FB63E7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBB5A250F80C2FD9C895D7180AE575C /* URLImage.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/URLImage/URLImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URLImage/URLImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/URLImage/URLImage.modulemap";
+				PRODUCT_MODULE_NAME = URLImage;
+				PRODUCT_NAME = URLImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36D445E9B2398653154DB9EAB9359607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8385209FA1D99C461D4429047F6A0C98 /* Pods-Tetopi.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tetopi/Pods-Tetopi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tetopi/Pods-Tetopi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		67F31CFB9C583B29CFC13C1D283DAFFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA1D9DA0F492AFF596B842C71F92F65 /* Pods-Tetopi-TetopiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8513E27C53A0453D8E100782057C94C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A94389AF4C6336ED065531B64A7D10 /* Pods-TetopiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TetopiTests/Pods-TetopiTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TetopiTests/Pods-TetopiTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8CEEA9D514D6C899C3B76F5C83D969CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96472E50B6D3FAB171DA9E04EAFFDA29 /* Pods-Tetopi-TetopiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tetopi-TetopiUITests/Pods-Tetopi-TetopiUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		944AB47E428248E342BC3D956DD0354A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E7AC3091FB0E0B24F63393BE1840C2 /* Pods-Tetopi.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tetopi/Pods-Tetopi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tetopi/Pods-Tetopi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC28AAC2297C0420891E32B43460CD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F48C70FEF25BDB969C898228C367D18 /* Pods-TetopiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TetopiTests/Pods-TetopiTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TetopiTests/Pods-TetopiTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0DE80C26A1A2FB81D05CEF67F0D9A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC42227E1605171C4365A10F4A0F2DA /* URLImage.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/URLImage/URLImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URLImage/URLImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/URLImage/URLImage.modulemap";
+				PRODUCT_MODULE_NAME = URLImage;
+				PRODUCT_NAME = URLImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B1FFAF863AD60C2BA7C0D7063CA1164 /* Build configuration list for PBXNativeTarget "Pods-TetopiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8513E27C53A0453D8E100782057C94C2 /* Debug */,
+				AC28AAC2297C0420891E32B43460CD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		596BD79E2D6E750BEFBBB2A87D61F5CD /* Build configuration list for PBXNativeTarget "Pods-Tetopi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D445E9B2398653154DB9EAB9359607 /* Debug */,
+				944AB47E428248E342BC3D956DD0354A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D170B662FD01798B3CA69767A87479 /* Build configuration list for PBXNativeTarget "URLImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14FA38818ACD9CD91A00CAD6FB63E7F2 /* Debug */,
+				F0DE80C26A1A2FB81D05CEF67F0D9A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8622C54A5B65048A9CF4898D06AC8628 /* Build configuration list for PBXNativeTarget "Pods-Tetopi-TetopiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEEA9D514D6C899C3B76F5C83D969CF /* Debug */,
+				67F31CFB9C583B29CFC13C1D283DAFFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
