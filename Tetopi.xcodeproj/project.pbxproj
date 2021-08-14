@@ -43,6 +43,11 @@
 		A5026DCD26C7CF28005B4321 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DCC26C7CF28005B4321 /* DashboardView.swift */; };
 		A5026DD826C7DADC005B4321 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DD726C7DADC005B4321 /* FontExtension.swift */; };
 		A5026DDA26C7DCBB005B4321 /* PlayFairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */; };
+		A5026DDB26C7E0BA005B4321 /* Hind-Regular.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD126C7DA18005B4321 /* Hind-Regular.ttc */; };
+		A5026DDC26C7E0C0005B4321 /* Hind-SemiBold.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD326C7DA18005B4321 /* Hind-SemiBold.ttc */; };
+		A5026DDD26C7E0C3005B4321 /* Hind-Medium.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD226C7DA18005B4321 /* Hind-Medium.ttc */; };
+		A5026DDE26C7E0C6005B4321 /* Hind-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD026C7DA18005B4321 /* Hind-Light.ttc */; };
+		A5026DDF26C7E0C9005B4321 /* Hind-Bold.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DCF26C7DA18005B4321 /* Hind-Bold.ttc */; };
 		A59FE63926C7CBA1005F2BCC /* TetopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */; };
 		A59FE63B26C7CBA1005F2BCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63A26C7CBA1005F2BCC /* ContentView.swift */; };
 		A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FE63C26C7CBA4005F2BCC /* Assets.xcassets */; };
@@ -557,8 +562,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59FE64026C7CBA4005F2BCC /* Preview Assets.xcassets in Resources */,
+				A5026DDD26C7E0C3005B4321 /* Hind-Medium.ttc in Resources */,
 				A5026DDA26C7DCBB005B4321 /* PlayFairDisplay-Bold.ttf in Resources */,
 				A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */,
+				A5026DDE26C7E0C6005B4321 /* Hind-Light.ttc in Resources */,
+				A5026DDB26C7E0BA005B4321 /* Hind-Regular.ttc in Resources */,
+				A5026DDC26C7E0C0005B4321 /* Hind-SemiBold.ttc in Resources */,
+				A5026DDF26C7E0C9005B4321 /* Hind-Bold.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

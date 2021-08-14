@@ -16,6 +16,9 @@ struct CardthumbItemView: View {
     var body: some View {
         VStack(alignment:.center,spacing: 0){
             //MARK: - Top
+            Rectangle()
+                .frame(height: 6)
+                .foregroundColor(Color(UIColor(named: "ColorGrayEEE")!))
             ZStack (alignment: .topLeading){
                 if let imgurl = article.thumbnails?.availableSizes,
                    let url = URL(string: imgurl){
@@ -42,41 +45,52 @@ struct CardthumbItemView: View {
             }
             
             //MARK: - Center
-            VStack(alignment:.leading,spacing:12) {
+            VStack(spacing:0) {
                 Text(article.title!)
                     .playfairBold20Black().foregroundColor(Color(UIColor(named: "ColorBlack333")!))
-                Text(article.excerpt!).hindRegular16().foregroundColor(Color(UIColor(named: "ColorGray666")!))
-            }.padding(.init(top: 12, leading: 16, bottom: 0, trailing: 16))
-            //MARK: - Bottom
-            HStack(alignment: .firstTextBaseline){
-                Text(getDateArticleList(date: article.publishedDate!, category: (article.terms?.category![0].name)!))
-                    .hindRegular12()
-                    .foregroundColor(Color(UIColor(named: "ColorGray999")!))
-                Spacer()
-                HStack {
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image("imgButtonShare")
-                        
-                    })
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "bookmark")
-                            .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                    })
-                   
-                      
-                    Button(action:{
-                        DispatchQueue.main.async {
-                            tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
-                        }
-                    }, label: {
-                        Image("imgButtonTetopi")
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                Text(article.excerpt!).hindRegular16()
+                    .foregroundColor(Color(UIColor(named: "ColorGray666")!))
+                    .frame(maxWidth: .infinity,maxHeight: 120, alignment: .leading)
+            }
+            
+            .padding(.top, 12)
+            .padding(.horizontal,16)
+            VStack {
+                
+                //MARK: - Bottom
+                HStack(alignment: .firstTextBaseline){
+                    Text(getDateArticleList(date: article.publishedDate!, category: (article.terms?.category![0].name)!))
+                        .hindRegular12()
+                        .foregroundColor(Color(UIColor(named: "ColorGray999")!))
+                    Spacer()
+                    HStack {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Image("imgButtonShare")
                             
-                    })
+                        })
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Image(systemName: "bookmark")
+                                .foregroundColor(Color(UIColor(named: "ColorGray666")!))
+                        })
+                       
+                          
+                        Button(action:{
+                            DispatchQueue.main.async {
+                                tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
+                            }
+                        }, label: {
+                            Image("imgButtonTetopi")
+                                
+                        })
+                    }
+                    .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
                 }
-                .padding(.init(top: 10, leading: 16, bottom: 10, trailing: 16))
-            }.padding(.horizontal,16)
-            .edgesIgnoringSafeArea(.all)
-        }
+
+            }
+            .padding(.horizontal,16)
+        }.edgesIgnoringSafeArea(.all)
+        
     }
 }
 //struct CardthumbItemView_Previews: PreviewProvider {

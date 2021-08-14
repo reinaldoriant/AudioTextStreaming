@@ -19,9 +19,6 @@ struct ArticleListTerbaru: View {
                     LazyVStack{
                         ForEach(content, id:\.name){ article in
                             CardthumbItemView(article: article)
-                            Rectangle()
-                                .frame(height: 6)
-                                .foregroundColor(Color(UIColor(named: "ColorGrayEEE")!))
                         }
                     }
                 }
