@@ -56,21 +56,28 @@ struct TetopiView: View {
                     Spacer()
                     //MARK: - Image and title with date fuper
                     VStack(spacing:16){
-                        Image("imgMockTetopi")
-                            .resizable()
-                            .interpolation(.none)
-                            .aspectRatio(contentMode: .fill)
-                            .frame(height: 183,alignment: .center)
-                            .clipped()
-                            .padding(.bottom,16)
+                        if let imgurl = tetopiViewModel.dataTetopi?.image ?? "Gambar kosong",
+                           let url = URL(string: imgurl){
+                            URLImage(url: url,
+                                     failure:{ error, _ in
+                                        EmptyView()
+                                     }, content: { image in
+                                        image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(height: 183,alignment: .center)
+                                            .clipped()
+                                            .padding(.bottom,16)
+                                     })
+                        }
                         VStack {
-                            Text("Aku bangga jadi anak Indonesia")
+                            Text(tetopiViewModel.dataTetopi?.title ?? "title kosong")
                                 .multilineTextAlignment(.center)
                                 .font(Font.custom("PlayfairDisplay-Bold", size: 20))
                                 .lineLimit(3)
                                 .frame(width: 328, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         }
-                        Text(getDateWithCategory(date: "2021-08-15 14:41:05", category: "Nasional"))
+                        Text(getDateWithCategory(date: tetopiViewModel.dataTetopi?.time ?? "time kosong", category: tetopiViewModel.dataTetopi?.category ?? "category kosong"))
                             .hindMedium14()
                             .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                     }.padding(.bottom, 83)
