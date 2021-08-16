@@ -73,20 +73,22 @@ struct CardthumbItemView: View {
                             Image(systemName: "bookmark")
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                         })
-                        Image("imgButtonTetopi")
-                            .onTapGesture {
-                                tetopiViewModel.showPlayer = true
-                            }
-//                        Button(action:{
-//                            DispatchQueue.main.async {
-//                                tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
-//
+//                        Image("imgButtonTetopi")
+//                            .onTapGesture {
+//                                tetopiViewModel.showPlayer = true
 //                            }
+                        Text(String(tetopiViewModel.showPlayer))
+                        Button(action:{
+                            DispatchQueue.main.async {
+                                tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
+
+                            }
+                            tetopiViewModel.showPlayer.toggle()
 //                            tetopiViewModel.showPlayer = true
-//                        }, label: {
-//                            Image("imgButtonTetopi")
-//
-//                        })
+                        }, label: {
+                            Image("imgButtonTetopi")
+
+                        })
                     }
                     .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
                 }
