@@ -111,8 +111,8 @@ struct TetopiView: View {
                             .padding(.leading,32)
                             
                             //Play Pause Audio
-                            Button(action: {isPlaying.toggle()}, label: {
-                                Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill").resizable()
+                            Button(action: {tetopiViewModel.playPause()}, label: {
+                                Image(systemName: tetopiViewModel.isPlaying ? "pause.circle.fill" : "play.circle.fill").resizable()
                             })
                             .frame(width: 44, height: 44, alignment: .center)
                             .foregroundColor(Color(UIColor(named: "ColorBlueKompas")!))
@@ -202,8 +202,10 @@ struct TetopiView: View {
                     
                     //MARK: - Player and close Tetopi Comper
                     HStack(spacing: 22) {
-                        Button(action: {isPlaying.toggle()}, label: {
-                            Image(systemName: isPlaying ? "pause.fill" : "play.fill").resizable()
+                        Button(action: {
+                            tetopiViewModel.playPause()
+                        }, label: {
+                            Image(systemName: tetopiViewModel.isPlaying ? "pause.fill" : "play.fill").resizable()
                         })
                         .frame(width: 14, height: 14, alignment: .center)
                         .foregroundColor(Color(UIColor(named: "ColorBlueKompas")!))

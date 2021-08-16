@@ -83,10 +83,9 @@ struct CardthumbItemView: View {
                         let slugCategory  = String((article.terms?.category![0].slug)!)
                         if slugCategory.checkCategoryTetopi() {
                             Button(action:{
-                                DispatchQueue.main.async {
-                                    tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
-                                    tetopiViewModel.showPlayer = true
-                                }
+                                tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
+                                tetopiViewModel.showPlayer = true
+                                tetopiViewModel.playAudio()
                             }, label: {
                                 Image("imgButtonTetopi")
                                 
