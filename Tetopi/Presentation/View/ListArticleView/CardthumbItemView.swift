@@ -10,8 +10,8 @@ import URLImage
 
 struct CardthumbItemView: View {
     @State var article: Article
-    @StateObject var tetopiViewModel = TetopiViewModel()
-    @ObservedObject var viewModel = ArticleListTerbaruViewModel(repo: ArticleListService())
+    @EnvironmentObject var tetopiViewModel: TetopiViewModel
+   
     
     var body: some View {
         VStack(alignment:.center,spacing: 0){
@@ -73,34 +73,23 @@ struct CardthumbItemView: View {
                             Image(systemName: "bookmark")
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                         })
-//                        Image("imgButtonTetopi")
-//                            .onTapGesture {
-//                                tetopiViewModel.showPlayer = true
-//                            }
-                        Text(String(tetopiViewModel.showPlayer))
                         Button(action:{
                             DispatchQueue.main.async {
                                 tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
-
+                                tetopiViewModel.showPlayer.toggle()
                             }
-                            tetopiViewModel.showPlayer.toggle()
-//                            tetopiViewModel.showPlayer = true
                         }, label: {
                             Image("imgButtonTetopi")
-
+                            
                         })
                     }
                     .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
                 }
-
+                
             }
             .padding(.horizontal,16)
         }.edgesIgnoringSafeArea(.all)
         
     }
 }
-//struct CardthumbItemView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CardthumbItemView(Article)
-//    }
-//}
+

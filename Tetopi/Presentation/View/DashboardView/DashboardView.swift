@@ -36,9 +36,10 @@ struct DashboardView: View {
                     heightPhone = -29
                 }
                 else{
-                    heightPhone = -69
+                    heightPhone = -59
                 }
             }
+            .environmentObject(tetopiViewModel)
             
         }
         

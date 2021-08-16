@@ -9,6 +9,9 @@ import SwiftUI
 
 struct TetopiView: View {
     //MARK: - Properties
+    
+    @EnvironmentObject var tetopiViewModel: TetopiViewModel
+    
     //Animation Tetopi
     var animationTransition: Namespace.ID
     @Binding var expandFuper: Bool
@@ -31,9 +34,9 @@ struct TetopiView: View {
                             HStack{
                                 Button(action: {
                                         
-                                            expandFuper = false}, label: {
-                                                Image("imgButtonBlueArrow")
-                                            })
+                                        expandFuper = false}, label: {
+                                            Image("imgButtonBlueArrow")
+                                        })
                                 Spacer()
                             }.padding(.bottom,32)
                         }
@@ -193,7 +196,11 @@ struct TetopiView: View {
                         Rectangle()
                             .frame(width: 1, height: 50)
                             .foregroundColor(Color(UIColor(named: "ColorGrayDDD")!))
-                        Button(action: {isCloseTetopi.toggle()}, label: {
+                        Button(action: {
+                            isCloseTetopi = true
+                            tetopiViewModel.showPlayer = false
+                            
+                        }, label: {
                             Image(systemName: "xmark").resizable()
                                 .frame(width: 14, height: 14, alignment: .center)
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))

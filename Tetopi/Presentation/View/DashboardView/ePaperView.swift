@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ePaperView: View {
     var body: some View {
-        Text("Ciyee nyariin sabar dong ☺️")
+        VStack{
+            Spacer()
+            Text("Ciyee nyariin sabar dong ☺️")
+            Text("Ciyee nyariin sabar dong ☺️")
+            Text("Ciyee nyariin sabar dong ☺️")
+            Text("Ciyee nyariin sabar dong ☺️")
+        }
     }
 }
 
