@@ -12,17 +12,15 @@ struct CardthumbItemView: View {
     @State var article: Article
     @EnvironmentObject var tetopiViewModel: TetopiViewModel
     
-    
     var body: some View {
-        
         VStack(alignment:.center,spacing: 0){
-            //MARK: - Top
+            //MARK: - Background Cardthumb
             Rectangle()
                 .frame(height: 6)
                 .foregroundColor(Color(UIColor(named: "ColorGrayEEE")!))
             VStack{
                 ZStack (alignment: .topLeading){
-                    
+                    //MARK: - Image Cardthumb
                     if let imgurl = article.thumbnails?.availableSizes,
                        let url = URL(string: imgurl){
                         URLImage(url: url,
@@ -36,6 +34,7 @@ struct CardthumbItemView: View {
                                         .clipped()
                                  })
                     }
+                    //MARK: - Label Cardthumb
                     VStack {
                         if(article.isFreemium!){
                             Text("Bebas Akses")
@@ -49,8 +48,7 @@ struct CardthumbItemView: View {
                 
                 
             }
-            
-            //MARK: - Center
+            //MARK: - Title Cardthumb
             VStack(spacing:0) {
                 Text(article.title!)
                     .playfairBold20Black().foregroundColor(Color(UIColor(named: "ColorBlack333")!))
@@ -59,35 +57,41 @@ struct CardthumbItemView: View {
                     .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                     .frame(maxWidth: .infinity,maxHeight: 120, alignment: .leading)
             }
-            
             .padding(.top, 12)
             .padding(.horizontal,16)
+            
             VStack {
-                
-                //MARK: - Bottom
                 HStack(alignment: .firstTextBaseline){
                     Text(getDateArticleList(date: article.publishedDate!, category: (article.terms?.category![0].name)!))
                         .hindRegular12()
                         .foregroundColor(Color(UIColor(named: "ColorGray999")!))
                     Spacer()
                     HStack {
+                        //MARK: - Button Share
                         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                             Image("imgButtonShare")
                             
                         })
+                        
+                        //MARK: - Button Bookmark
                         Button(action: {tetopiViewModel.showPlayer = true}, label: {
                             Image(systemName: "bookmark")
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                         })
-                        Button(action:{
-                            DispatchQueue.main.async {
-                                tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
-                                tetopiViewModel.showPlayer = true
-                            }
-                        }, label: {
-                            Image("imgButtonTetopi")
-                            
-                        })
+                        
+                        //MARK: - Button Tetopi
+                        let slugCategory  = String((article.terms?.category![0].slug)!)
+                        if slugCategory.checkCategoryTetopi() {
+                            Button(action:{
+                                DispatchQueue.main.async {
+                                    tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
+                                    tetopiViewModel.showPlayer = true
+                                }
+                            }, label: {
+                                Image("imgButtonTetopi")
+                                
+                            })
+                        }
                     }
                     .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
                 }

@@ -50,6 +50,7 @@
 		A5026DDF26C7E0C9005B4321 /* Hind-Bold.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DCF26C7DA18005B4321 /* Hind-Bold.ttc */; };
 		A5026DE326C7FDAF005B4321 /* TabBarDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE226C7FDAF005B4321 /* TabBarDummy.swift */; };
 		A5026DE526C91DB2005B4321 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE426C91DB2005B4321 /* TabBarView.swift */; };
+		A5026DEA26CA2B39005B4321 /* TetopiExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE926CA2B38005B4321 /* TetopiExtension.swift */; };
 		A59FE63926C7CBA1005F2BCC /* TetopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */; };
 		A59FE63B26C7CBA1005F2BCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63A26C7CBA1005F2BCC /* ContentView.swift */; };
 		A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FE63C26C7CBA4005F2BCC /* Assets.xcassets */; };
@@ -133,6 +134,7 @@
 		A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayFairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		A5026DE226C7FDAF005B4321 /* TabBarDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDummy.swift; sourceTree = "<group>"; };
 		A5026DE426C91DB2005B4321 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		A5026DE926CA2B38005B4321 /* TetopiExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiExtension.swift; sourceTree = "<group>"; };
 		A59FE63526C7CBA1005F2BCC /* Tetopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetopi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiApp.swift; sourceTree = "<group>"; };
 		A59FE63A26C7CBA1005F2BCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 			children = (
 				A59FE68426C7CCA5005F2BCC /* Date.swift */,
 				A5026DD726C7DADC005B4321 /* FontExtension.swift */,
+				A5026DE926CA2B38005B4321 /* TetopiExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -728,6 +731,7 @@
 				A5026DAD26C7CD8B005B4321 /* PostTag.swift in Sources */,
 				A5026DC126C7CE31005B4321 /* ArticleListService.swift in Sources */,
 				A5026DB226C7CDA3005B4321 /* TetopiModel.swift in Sources */,
+				A5026DEA26CA2B39005B4321 /* TetopiExtension.swift in Sources */,
 				A5026DA826C7CD8B005B4321 /* Article.swift in Sources */,
 				A5026DC926C7CE42005B4321 /* ErrorResponse.swift in Sources */,
 				A59FE67426C7CC14005F2BCC /* CardthumbItemView.swift in Sources */,
