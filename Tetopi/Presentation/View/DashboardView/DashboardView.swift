@@ -10,10 +10,10 @@ import SwiftUI
 struct DashboardView: View {
     
     //MARK: - Tetopi Properties
-    @State var expandFuper = false
-    @Namespace var animationTransition
-    @State var heightPhone = 0
+//    @State var expandFuper = false
+//    @State var heightPhone = 0
     @StateObject var tetopiViewModel = TetopiViewModel()
+    @ObservedObject var terbaruViewModel = ArticleListTerbaruViewModel(repo: ArticleListService())
     
     var body: some View {
         GeometryReader{geometry in
@@ -28,18 +28,21 @@ struct DashboardView: View {
                 //MARK: - Tetopi
                 let _ = print(tetopiViewModel.showPlayer)
                 if tetopiViewModel.showPlayer{
-                    TetopiView(animationTransition: animationTransition, expandFuper:$expandFuper,heightPhone: $heightPhone )
+                    TetopiView(expandFuper: tetopiViewModel.expandFuper ,heightPhone: tetopiViewModel.heightPhone )
                 }
             }
             .onAppear{
                 if geometry.size.height > 647 {
-                    heightPhone = -29
+                    tetopiViewModel.heightPhone = -29
                 }
                 else{
-                    heightPhone = -59
+                    tetopiViewModel.heightPhone = -59
                 }
+                
+                terbaruViewModel.getArticleListTerbaruNoCursor()
             }
             .environmentObject(tetopiViewModel)
+            .environmentObject(terbaruViewModel)
             
         }
         

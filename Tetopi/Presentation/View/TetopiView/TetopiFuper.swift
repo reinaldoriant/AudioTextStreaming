@@ -65,7 +65,6 @@ struct TetopiFuper: View {
                          }, content: { image in
                             image
                                 .resizable()
-                                .interpolation(.none)
                                 .aspectRatio(contentMode: .fill)
                                 .frame(height: 183,alignment: .center)
                                 .clipped()

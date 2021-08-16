@@ -11,37 +11,43 @@ import URLImage
 struct CardthumbItemView: View {
     @State var article: Article
     @EnvironmentObject var tetopiViewModel: TetopiViewModel
-   
+    
     
     var body: some View {
+        
         VStack(alignment:.center,spacing: 0){
             //MARK: - Top
             Rectangle()
                 .frame(height: 6)
                 .foregroundColor(Color(UIColor(named: "ColorGrayEEE")!))
-            ZStack (alignment: .topLeading){
-                if let imgurl = article.thumbnails?.availableSizes,
-                   let url = URL(string: imgurl){
-                    URLImage(url: url,
-                             failure:{ error, _ in
-                                EmptyView()
-                             }, content: { image in
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(height: 202, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                    .clipped()
-                             })
-                }
-                VStack {
-                    if(article.isFreemium!){
-                        Text("Bebas Akses")
-                            .labelStyle()
-                            .padding(.horizontal,8)
-                            .background(Color(UIColor(named: "ColorBlueLabel")!))
-                            .cornerRadius(4)
+            VStack{
+                ZStack (alignment: .topLeading){
+                    
+                    if let imgurl = article.thumbnails?.availableSizes,
+                       let url = URL(string: imgurl){
+                        URLImage(url: url,
+                                 failure:{ error, _ in
+                                    EmptyView()
+                                 }, content: { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: .infinity,height: 202, alignment: .center)
+                                        .clipped()
+                                 })
                     }
-                }.padding(.init(top: 8, leading: 8, bottom: 0, trailing: 0))
+                    VStack {
+                        if(article.isFreemium!){
+                            Text("Bebas Akses")
+                                .labelStyle()
+                                .padding(.horizontal,8)
+                                .background(Color(UIColor(named: "ColorBlueLabel")!))
+                                .cornerRadius(4)
+                        }
+                    }.padding(.init(top: 8, leading: 8, bottom: 0, trailing: 0))
+                }
+                
+                
             }
             
             //MARK: - Center
@@ -89,7 +95,8 @@ struct CardthumbItemView: View {
             }
             .padding(.horizontal,16)
         }.edgesIgnoringSafeArea(.all)
-        
     }
+    
 }
+
 

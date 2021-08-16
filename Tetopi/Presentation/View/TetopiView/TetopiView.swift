@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct TetopiView: View {
     //MARK: - Properties
@@ -13,9 +14,9 @@ struct TetopiView: View {
     @EnvironmentObject var tetopiViewModel: TetopiViewModel
     
     //Animation Tetopi
-    var animationTransition: Namespace.ID
-    @Binding var expandFuper: Bool
-    @Binding var heightPhone:Int
+
+    @State var expandFuper: Bool
+    @State var heightPhone:Int
     @State var isCloseTetopi: Bool = false
     @State var offsetFuper : CGFloat = 0
     var height = UIScreen.main.bounds.height / 3
@@ -33,7 +34,6 @@ struct TetopiView: View {
                         VStack{
                             HStack{
                                 Button(action: {
-                                        
                                         expandFuper = false}, label: {
                                             Image("imgButtonBlueArrow")
                                         })
@@ -159,23 +159,31 @@ struct TetopiView: View {
             else {
                 HStack{
                     //MARK: - Image Tetopi Comper
-                    Image("imgMockTetopi")
-                        .resizable()
-                        .interpolation(.none)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 80, height: 80)
-                        .clipped()
+                    if let imgurl = tetopiViewModel.dataTetopi?.image ?? "Gambarnya Kosong",
+                       let url = URL(string: imgurl){
+                        URLImage(url: url,
+                                 failure:{ error, _ in
+                                    EmptyView()
+                                 }, content: { image in
+                                    image
+                                        .resizable()
+                                        .interpolation(.none)
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 80, height: 80)
+                                        .clipped()
+                                 })
+                    }
                     
                     //MARK: - Title and date Tetopi Comper
                     VStack(alignment: .leading, spacing: 2){
                         Spacer()
-                        Text("PM Rajoy beri waktu aku riset tetopi")
+                        Text(tetopiViewModel.dataTetopi?.title ?? "Title Kosong")
                             .multilineTextAlignment(.center)
                             .font(Font.custom("PlayFairDisplay-Bold", size: 16))
                             .lineLimit(1)
                         
                         
-                        Text(getDateArticleList(date: "2021-08-14 15:00:00", category: "International"))
+                        Text(getDateArticleList(date: tetopiViewModel.dataTetopi?.time ?? "Tanggal kosong", category: tetopiViewModel.dataTetopi?.category ?? "Tanggal kosong"))
                             .hindRegular12()
                             .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                         

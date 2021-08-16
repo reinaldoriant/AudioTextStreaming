@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct ArticleListTerbaru: View {
-    @ObservedObject var viewModel = ArticleListTerbaruViewModel(repo: ArticleListService())
     
-    
+    @EnvironmentObject var terbaruViewModel: ArticleListTerbaruViewModel
     var body: some View {
         VStack{
-            switch viewModel._articleListTerbaruState {
+            switch terbaruViewModel._articleListTerbaruState {
             case .success(let content):
                 ScrollView{
                     LazyVStack{
                         ForEach(content, id:\.name){ article in
                             CardthumbItemView(article: article)
-                                
                         }
                     }
                 }
@@ -29,10 +27,6 @@ struct ArticleListTerbaru: View {
                 ProgressView()
                     .padding(.leading,16)
             }
-        }
-        .onAppear{
-            viewModel.getArticleListTerbaruNoCursor()
-            
         }
     }
     

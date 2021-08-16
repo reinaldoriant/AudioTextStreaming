@@ -22,7 +22,7 @@ class ArticleListTerbaruViewModel:ObservableObject{
     }
     
     func getArticleListTerbaruNoCursor() {
-        self._articleListTerbaruState = .loading
+        //self._articleListTerbaruState = .loading
         let date = Date().getFormattedDate(format: "yyyy-MM-dd HH:mm:ss")
         let cancellable = _articleListRepo
             .getTerbaruListNoCursor(from: .getTerbaruListNoCursor(siteId: "1", timeStamp: date))
