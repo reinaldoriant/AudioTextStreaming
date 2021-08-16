@@ -77,7 +77,6 @@ struct CardthumbItemView: View {
                             .onTapGesture {
                                 tetopiViewModel.showPlayer = true
                             }
-                        Text(String(tetopiViewModel.showPlayer))
 //                        Button(action:{
 //                            DispatchQueue.main.async {
 //                                tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
