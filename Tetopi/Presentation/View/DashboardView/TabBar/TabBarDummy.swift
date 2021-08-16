@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct TabBarDummy: View {
+    
     @State var current = 0
     let tabBarImageNames = ["imgButtonMainMenu", "imgButtonEpaper", "imgButtonBook", "imgButtonProfile"]
     let tabBarTextNames = ["Kompas.id", "ePaper","Buku","Akun"]
@@ -15,6 +16,7 @@ struct MainView: View {
         UITabBar.appearance().barTintColor = UIColor(Color.white) // custom color.
        }
     var body: some View {
+        //            Text("heightPhone = \(heightPhone) dan \(geometry.size.height)")
         TabView(selection: $current){
             ArticleListTerbaru().tabItem { Image(tabBarImageNames[0])
                 Text(tabBarTextNames[0]) }.tag(0)
@@ -31,6 +33,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        TabBarDummy()
     }
 }

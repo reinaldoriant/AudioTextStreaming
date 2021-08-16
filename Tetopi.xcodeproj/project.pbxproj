@@ -48,7 +48,8 @@
 		A5026DDD26C7E0C3005B4321 /* Hind-Medium.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD226C7DA18005B4321 /* Hind-Medium.ttc */; };
 		A5026DDE26C7E0C6005B4321 /* Hind-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD026C7DA18005B4321 /* Hind-Light.ttc */; };
 		A5026DDF26C7E0C9005B4321 /* Hind-Bold.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DCF26C7DA18005B4321 /* Hind-Bold.ttc */; };
-		A5026DE326C7FDAF005B4321 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE226C7FDAF005B4321 /* MainView.swift */; };
+		A5026DE326C7FDAF005B4321 /* TabBarDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE226C7FDAF005B4321 /* TabBarDummy.swift */; };
+		A5026DE526C91DB2005B4321 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE426C91DB2005B4321 /* TabBarView.swift */; };
 		A59FE63926C7CBA1005F2BCC /* TetopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */; };
 		A59FE63B26C7CBA1005F2BCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63A26C7CBA1005F2BCC /* ContentView.swift */; };
 		A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FE63C26C7CBA4005F2BCC /* Assets.xcassets */; };
@@ -130,7 +131,8 @@
 		A5026DD326C7DA18005B4321 /* Hind-SemiBold.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-SemiBold.ttc"; path = "Tetopi/Presentation/Asset/Hind-SemiBold.ttc"; sourceTree = SOURCE_ROOT; };
 		A5026DD726C7DADC005B4321 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayFairDisplay-Bold.ttf"; sourceTree = "<group>"; };
-		A5026DE226C7FDAF005B4321 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A5026DE226C7FDAF005B4321 /* TabBarDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDummy.swift; sourceTree = "<group>"; };
+		A5026DE426C91DB2005B4321 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		A59FE63526C7CBA1005F2BCC /* Tetopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetopi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiApp.swift; sourceTree = "<group>"; };
 		A59FE63A26C7CBA1005F2BCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -316,6 +318,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		A5026DE626C91E59005B4321 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A5026DE226C7FDAF005B4321 /* TabBarDummy.swift */,
+				A5026DE426C91DB2005B4321 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		A59FE62C26C7CBA1005F2BCC = {
 			isa = PBXGroup;
 			children = (
@@ -383,10 +394,10 @@
 			isa = PBXGroup;
 			children = (
 				A5026DCC26C7CF28005B4321 /* DashboardView.swift */,
+				A5026DE626C91E59005B4321 /* TabBar */,
 				A59FE66B26C7CBEF005F2BCC /* akunView.swift */,
 				A59FE66A26C7CBEF005F2BCC /* bookView.swift */,
 				A59FE66C26C7CBEF005F2BCC /* ePaperView.swift */,
-				A5026DE226C7FDAF005B4321 /* MainView.swift */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
@@ -723,9 +734,10 @@
 				A59FE68026C7CC53005F2BCC /* ArticleListTerbaruViewModel.swift in Sources */,
 				A5026DD826C7DADC005B4321 /* FontExtension.swift in Sources */,
 				A5026DC426C7CE31005B4321 /* ArticleListEndPoint.swift in Sources */,
+				A5026DE526C91DB2005B4321 /* TabBarView.swift in Sources */,
 				A59FE66E26C7CBEF005F2BCC /* ePaperView.swift in Sources */,
 				A5026DA726C7CD8B005B4321 /* Page.swift in Sources */,
-				A5026DE326C7FDAF005B4321 /* MainView.swift in Sources */,
+				A5026DE326C7FDAF005B4321 /* TabBarDummy.swift in Sources */,
 				A5026D9C26C7CD8B005B4321 /* Large.swift in Sources */,
 				A59FE68626C7CCA5005F2BCC /* Date.swift in Sources */,
 				A5026D9D26C7CD8B005B4321 /* Result.swift in Sources */,
