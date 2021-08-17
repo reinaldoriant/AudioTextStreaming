@@ -7,6 +7,8 @@ target 'Tetopi' do
 
   # Pods for Tetopi
   pod 'URLImage'	
+  pod 'SwiftAudioPlayer'
+
   target 'TetopiTests' do
     inherit! :search_paths
     # Pods for testing

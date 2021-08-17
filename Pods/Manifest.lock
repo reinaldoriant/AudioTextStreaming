@@ -1,4 +1,5 @@
 PODS:
+  - SwiftAudioPlayer (6.1.0)
   - URLImage (2.2.5):
     - URLImage/Common (= 2.2.5)
     - URLImage/DownloadManager (= 2.2.5)
@@ -20,15 +21,18 @@ PODS:
   - URLImage/RemoteContentView (2.2.5)
 
 DEPENDENCIES:
+  - SwiftAudioPlayer
   - URLImage
 
 SPEC REPOS:
   trunk:
+    - SwiftAudioPlayer
     - URLImage
 
 SPEC CHECKSUMS:
+  SwiftAudioPlayer: ff8d85d1da8f753dac138ee5c99283c78b03f285
   URLImage: 36a66c03ba2a9ccbbf06bc83431f2cef171008e8
 
-PODFILE CHECKSUM: e7d4a14f0791389e148077727c709f15db490848
+PODFILE CHECKSUM: 09efb2970a0b4a3d1a9c5050f80958bc5896a647
 
 COCOAPODS: 1.10.2

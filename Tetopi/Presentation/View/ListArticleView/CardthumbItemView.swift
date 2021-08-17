@@ -85,7 +85,7 @@ struct CardthumbItemView: View {
                             Button(action:{
                                 tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
                                 tetopiViewModel.showPlayer = true
-                                tetopiViewModel.playAudio()
+                                tetopiViewModel.initializeTetopi()
                             }, label: {
                                 Image("imgButtonTetopi")
                                 

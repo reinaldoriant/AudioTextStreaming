@@ -14,7 +14,7 @@ struct TetopiView: View {
     @EnvironmentObject var tetopiViewModel: TetopiViewModel
     
     //Animation Tetopi
-
+    
     @State var expandFuper: Bool
     @State var heightPhone:Int
     @State var isCloseTetopi: Bool = false
@@ -22,6 +22,7 @@ struct TetopiView: View {
     var height = UIScreen.main.bounds.height / 3
     //Player audio Tetopi
     @State var isPlaying : Bool = false
+    
     
     
     var body: some View{
@@ -85,16 +86,18 @@ struct TetopiView: View {
                     //MARK: - Player Audio fuper
                     VStack{
                         //Slider
-                        ZStack {
-                            //                Capsule()
-                            //                    .fill(Color(UIColor(named: "ColorGrayDDD")!))
-                            //                    .frame(height: 8)
-                            //                    .shadow(color: Color(UIColor(named: "ColorGrayDDD")!), radius: 1)
-                            //                Capsule()
-                            //                    .fill(Color(UIColor(named: "ColorBlueKompas")!))
-                            //                    .frame(width: 2, height: 8)
-                            
-                        }.padding(.bottom, 40)
+//                        CustomSlider(value: $tetopiViewModel.valueSlider, range: 0...tetopiViewModel.valueDurationSlider)
+                        Slider(value: $tetopiViewModel.valueSlider, in: 0...tetopiViewModel.valueDurationSlider)
+                            .accentColor(Color(UIColor(named: "ColorBlueKompas")!))
+                        HStack(){
+                            Text(getTimeTetopi(time: tetopiViewModel.elapsedTime))
+                                .hindRegular12()
+                                .foregroundColor(Color(UIColor(named: "ColorGray666")!))
+                            Spacer()
+                            Text(getTimeTetopi(time:tetopiViewModel.durationTime)
+                            ).hindRegular12()
+                            .foregroundColor(Color(UIColor(named: "ColorGray666")!))
+                        }
                         
                         HStack(alignment:.center, spacing:0) {
                             //Previous Audio
@@ -104,7 +107,7 @@ struct TetopiView: View {
                             .frame(width: 40, height: 40, alignment: .center)
                             
                             //Replay Audio
-                            Button(action:{},label: {
+                            Button(action:{tetopiViewModel.skipBackward15()},label: {
                                 Image("imgButtonReplay").resizable()
                             })
                             .frame(width: 40, height: 40, alignment: .center)
@@ -119,7 +122,7 @@ struct TetopiView: View {
                             .padding(.init(top: 0, leading: 36, bottom: 0, trailing: 36))
                             
                             //Forward Audio
-                            Button(action: {}, label: {
+                            Button(action: {tetopiViewModel.skipForward15()}, label: {
                                 Image("imgButtonForward").resizable()
                             })
                             .frame(width: 40, height: 40, alignment: .center)
@@ -244,6 +247,7 @@ struct TetopiView: View {
         .offset(y: offsetFuper)
         .opacity(isCloseTetopi ? 0 : 1)
         .gesture(DragGesture().onEnded(onEndedTetopi(value:)).onChanged(onChangedTetopi(value:)))
+        
     }
     
     func onChangedTetopi(value: DragGesture.Value)

@@ -86,3 +86,19 @@ func getDateArticleList (date:String,category:String) -> String {
     }
     return newDate + " · " + category
 }
+
+func getTimeTetopi (time:String) -> String {
+    var newDate = ""
+    let timeWithHours = DateFormatter()
+    timeWithHours.dateFormat = "HH:mm:ss"
+    
+    let timeWithoutHours = DateFormatter()
+    timeWithoutHours.dateFormat = "mm:ss"
+    
+    if let date = timeWithHours.date(from: time) {
+            newDate = timeWithoutHours.string(from: date)
+    } else {
+        print("There was an error decoding the string")
+    }
+    return newDate
+}
