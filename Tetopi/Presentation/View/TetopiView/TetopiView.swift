@@ -63,20 +63,20 @@ struct TetopiView: View {
                                          })
                             }
                             VStack {
-                                Text(tetopiViewModel.dataTetopi?.title ?? "title kosong")
+                                Text(tetopiViewModel.titleToString)
                                     .multilineTextAlignment(.center)
                                     .font(Font.custom("PlayfairDisplay-Bold", size: 20))
                                     .lineLimit(3)
                                     .frame(width: 328, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
-                            Text(getDateWithCategory(date: tetopiViewModel.dataTetopi?.time ?? "time kosong", category: tetopiViewModel.dataTetopi?.category ?? "category kosong"))
+                            Text(getDateWithCategory(date: tetopiViewModel.dataTetopi?.time ?? "time kosong", category: tetopiViewModel.categoryToString))
                                 .hindMedium14()
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                         }.padding(.bottom, 83)
                         
                         //MARK: - Player Audio fuper
                         VStack{
-                            //Slider
+                            //Slider Audio
                             //                        CustomSlider(value: $tetopiViewModel.valueSlider, range: 0...tetopiViewModel.valueDurationSlider)
                             Slider(value: $tetopiViewModel.valueCurrentSlider, in: 0...tetopiViewModel.valueDurationSlider)
                                 .accentColor(Color(UIColor(named: "ColorBlueKompas")!))
@@ -136,7 +136,7 @@ struct TetopiView: View {
                                     tetopiViewModel.showSpinnerPlayback = true
                                 }
                             },label:{
-                                Text("1x")
+                                Text(tetopiViewModel.isSpinnerChanged ? tetopiViewModel.speedRateName : "1x")
                                     .hindSemiBold16()
                                     .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                                 
@@ -160,12 +160,14 @@ struct TetopiView: View {
                     }
                     .padding(.init(top: tetopiViewModel.heightTopFuper, leading: 16, bottom: 16, trailing: 16))
                     
+                    //MARK: - Spinner Speed Rate
                     VStack(alignment: .leading){
                         Spacer()
                         if tetopiViewModel.showSpinnerPlayback{
                             HStack{
                                 SpinnerPlaybackSpeedView()
                                     .padding(.bottom, 16)
+                                    .padding(.leading,16)
                                 Spacer()
                             }
                         }
@@ -212,13 +214,13 @@ struct TetopiView: View {
                         //MARK: - Title and date Tetopi Comper
                         VStack(alignment: .leading, spacing: 2){
                             Spacer()
-                            Text(tetopiViewModel.dataTetopi?.title ?? "Title Kosong")
+                            Text(tetopiViewModel.titleToString)
                                 .multilineTextAlignment(.center)
                                 .font(Font.custom("PlayFairDisplay-Bold", size: 16))
                                 .lineLimit(1)
                             
                             
-                            Text(getDateArticleList(date: tetopiViewModel.dataTetopi?.time ?? "Tanggal kosong", category: tetopiViewModel.dataTetopi?.category ?? "Tanggal kosong"))
+                            Text(getDateArticleList(date: tetopiViewModel.dataTetopi?.time ?? "Tanggal kosong", category: tetopiViewModel.categoryToString))
                                 .hindRegular12()
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                             

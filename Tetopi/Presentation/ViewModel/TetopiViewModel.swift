@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftAudioPlayer
+import SwiftUI
 
 class TetopiViewModel : ObservableObject {
     //Data properties
@@ -17,11 +18,16 @@ class TetopiViewModel : ObservableObject {
     @Published var expandFuper = false
     @Published var isClosingTetopi = false
     @Published var showSpinnerPlayback = false
+    @Published var isSpinnerChanged = false
     
     @Published var heightPhoneType = ""
     @Published var heightTopFuper: CGFloat = 0
     @Published var heightComperFromDashboard = 0
     @Published var offsetFuper : CGFloat = 0
+    @Published var speedRateName: String = ""
+    
+    @Published var categoryToString: String = ""
+    @Published var titleToString: String = ""
 
     
     //Audio Control
@@ -38,9 +44,18 @@ class TetopiViewModel : ObservableObject {
 
     func initializeTetopi(){
         heightPhoneTetopi()
+        convertHtmlToString()
         setupAudio()
         durationAndSliderAudio()
         self.isClosingTetopi = false
+        self.isSpinnerChanged = false
+    }
+    
+    func convertHtmlToString(){
+        DispatchQueue.main.async {
+            self.categoryToString = self.dataTetopi?.category.html2String ?? ""
+            self.titleToString = self.dataTetopi?.title.html2String ?? ""
+        }
     }
     
     func heightPhoneTetopi(){
@@ -127,6 +142,13 @@ class TetopiViewModel : ObservableObject {
     
     func skipBackward15(){
         SAPlayer.shared.skipBackwards()
+    }
+    
+    func rateSpeedAudio(name: String, speed: Float){
+        SAPlayer.shared.rate = speed
+        self.showSpinnerPlayback = false
+        self.speedRateName = name
+        self.isSpinnerChanged = true
     }
 }
 

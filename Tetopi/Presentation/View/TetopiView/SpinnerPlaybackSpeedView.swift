@@ -8,57 +8,43 @@
 import SwiftUI
 
 struct SpinnerPlaybackSpeedView: View {
+    @EnvironmentObject var tetopiViewModel: TetopiViewModel
+    
+    let speedRate = [
+        SpeedRateData(name: "0.25x", value: 0.25),
+        SpeedRateData(name: "0.5x", value: 0.5),
+        SpeedRateData(name: "0.75x", value: 0.75),
+        SpeedRateData(name: "1x", value: 1.00),
+        SpeedRateData(name: "1.25x", value: 1.25),
+        SpeedRateData(name: "1.5x", value: 1.5),
+        SpeedRateData(name: "1.75x", value: 1.75),
+        SpeedRateData(name: "2x", value: 2.00)
+    ]
+    
     var body: some View {
-        ZStack{
-            Rectangle()
-                .frame(width: 56, height: 436)
-                .foregroundColor(Color.white)
-                .shadow(color: Color(red: 0, green: 0, blue: 0,opacity: 0.2), radius: 4, x: 0, y: 0)
-            
-            VStack(spacing: 28){
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("0.25x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: {}, label: {
-                    Text("0.5x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("0.75x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("1x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("1.25x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("1.5x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("1.75x")
-                        .hindSemiBold16()
-                        .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("2x")
+        VStack(spacing:28){
+            ForEach(0..<speedRate.count){ value in
+                
+                Button(action: {
+                    tetopiViewModel.rateSpeedAudio(name: speedRate[value].name, speed: speedRate[value].value)
+                }, label: {
+                    Text(speedRate[value].name)
                         .hindSemiBold16()
                         .foregroundColor(Color(UIColor(named: "ColorGray666")!))
                 })
             }
         }
+        .padding(.vertical,16)
+        .padding(.horizontal,10)
+        .background(Color.white)
+        .border(Color(UIColor(named: "ColorGrayDDD")!).opacity(0.25))
+        
     }
+}
+
+struct SpeedRateData {
+    var name: String
+    var value: Float
 }
 
 struct SpinnerPlaybackSpeedView_Previews: PreviewProvider {
