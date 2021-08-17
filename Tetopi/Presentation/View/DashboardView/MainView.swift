@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DashboardView: View {
+struct MainView: View {
     
     //MARK: - Tetopi Properties
 //    @State var expandFuper = false
@@ -17,7 +17,6 @@ struct DashboardView: View {
     
     var body: some View {
         GeometryReader{geometry in
-            let _ = print(String(tetopiViewModel.showPlayer))
             ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
                 
                 
@@ -25,18 +24,14 @@ struct DashboardView: View {
                 
                 TabBarView()
                 
-                //MARK: - Tetopi
-                let _ = print(tetopiViewModel.showPlayer)
-                if tetopiViewModel.showPlayer{
-                    TetopiView(expandFuper: tetopiViewModel.expandFuper ,heightPhone: tetopiViewModel.heightPhone )
-                }
+                
             }
             .onAppear{
                 if geometry.size.height > 647 {
-                    tetopiViewModel.heightPhone = -29
+                    tetopiViewModel.heightPhoneType = "TypeX"
                 }
                 else{
-                    tetopiViewModel.heightPhone = -59
+                    tetopiViewModel.heightPhoneType = "NotTypeX"
                 }
                 
                 terbaruViewModel.getArticleListTerbaruNoCursor()
@@ -52,6 +47,6 @@ struct DashboardView: View {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView()
+        MainView()
     }
 }

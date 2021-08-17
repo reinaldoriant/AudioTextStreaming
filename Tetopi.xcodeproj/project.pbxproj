@@ -40,7 +40,7 @@
 		A5026DC326C7CE31005B4321 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DBA26C7CE30005B4321 /* APIBuilder.swift */; };
 		A5026DC426C7CE31005B4321 /* ArticleListEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DBC26C7CE31005B4321 /* ArticleListEndPoint.swift */; };
 		A5026DC926C7CE42005B4321 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DC726C7CE42005B4321 /* ErrorResponse.swift */; };
-		A5026DCD26C7CF28005B4321 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DCC26C7CF28005B4321 /* DashboardView.swift */; };
+		A5026DCD26C7CF28005B4321 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DCC26C7CF28005B4321 /* MainView.swift */; };
 		A5026DD826C7DADC005B4321 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DD726C7DADC005B4321 /* FontExtension.swift */; };
 		A5026DDA26C7DCBB005B4321 /* PlayFairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD926C7DB5C005B4321 /* PlayFairDisplay-Bold.ttf */; };
 		A5026DDB26C7E0BA005B4321 /* Hind-Regular.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A5026DD126C7DA18005B4321 /* Hind-Regular.ttc */; };
@@ -52,6 +52,7 @@
 		A5026DE526C91DB2005B4321 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE426C91DB2005B4321 /* TabBarView.swift */; };
 		A5026DEA26CA2B39005B4321 /* TetopiExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026DE926CA2B38005B4321 /* TetopiExtension.swift */; };
 		A53A2C5A26CBC62F0055E2C6 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A2C5926CBC62F0055E2C6 /* CustomSlider.swift */; };
+		A53A2C5C26CBE2D10055E2C6 /* SpinnerPlaybackSpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A2C5B26CBE2D10055E2C6 /* SpinnerPlaybackSpeedView.swift */; };
 		A59FE63926C7CBA1005F2BCC /* TetopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */; };
 		A59FE63B26C7CBA1005F2BCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE63A26C7CBA1005F2BCC /* ContentView.swift */; };
 		A59FE63D26C7CBA4005F2BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59FE63C26C7CBA4005F2BCC /* Assets.xcassets */; };
@@ -124,7 +125,7 @@
 		A5026DBC26C7CE31005B4321 /* ArticleListEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListEndPoint.swift; sourceTree = "<group>"; };
 		A5026DBE26C7CE31005B4321 /* ArticleListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListService.swift; sourceTree = "<group>"; };
 		A5026DC726C7CE42005B4321 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		A5026DCC26C7CF28005B4321 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A5026DCC26C7CF28005B4321 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A5026DCF26C7DA18005B4321 /* Hind-Bold.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Bold.ttc"; path = "Tetopi/Presentation/Asset/Hind-Bold.ttc"; sourceTree = SOURCE_ROOT; };
 		A5026DD026C7DA18005B4321 /* Hind-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Light.ttc"; path = "Tetopi/Presentation/Asset/Hind-Light.ttc"; sourceTree = SOURCE_ROOT; };
 		A5026DD126C7DA18005B4321 /* Hind-Regular.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hind-Regular.ttc"; path = "Tetopi/Presentation/Asset/Hind-Regular.ttc"; sourceTree = SOURCE_ROOT; };
@@ -136,6 +137,7 @@
 		A5026DE426C91DB2005B4321 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		A5026DE926CA2B38005B4321 /* TetopiExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiExtension.swift; sourceTree = "<group>"; };
 		A53A2C5926CBC62F0055E2C6 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		A53A2C5B26CBE2D10055E2C6 /* SpinnerPlaybackSpeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerPlaybackSpeedView.swift; sourceTree = "<group>"; };
 		A59FE63526C7CBA1005F2BCC /* Tetopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetopi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FE63826C7CBA1005F2BCC /* TetopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetopiApp.swift; sourceTree = "<group>"; };
 		A59FE63A26C7CBA1005F2BCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -395,7 +397,7 @@
 		A59FE67126C7CBFB005F2BCC /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
-				A5026DCC26C7CF28005B4321 /* DashboardView.swift */,
+				A5026DCC26C7CF28005B4321 /* MainView.swift */,
 				A5026DE626C91E59005B4321 /* TabBar */,
 				A59FE66B26C7CBEF005F2BCC /* akunView.swift */,
 				A59FE66A26C7CBEF005F2BCC /* bookView.swift */,
@@ -417,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				A59FE67726C7CC28005F2BCC /* TetopiView.swift */,
+				A53A2C5B26CBE2D10055E2C6 /* SpinnerPlaybackSpeedView.swift */,
 			);
 			path = TetopiView;
 			sourceTree = "<group>";
@@ -742,12 +745,13 @@
 				A5026DA726C7CD8B005B4321 /* Page.swift in Sources */,
 				A5026DE326C7FDAF005B4321 /* TabBarDummy.swift in Sources */,
 				A5026D9C26C7CD8B005B4321 /* Large.swift in Sources */,
+				A53A2C5C26CBE2D10055E2C6 /* SpinnerPlaybackSpeedView.swift in Sources */,
 				A59FE68626C7CCA5005F2BCC /* Date.swift in Sources */,
 				A5026D9D26C7CD8B005B4321 /* Result.swift in Sources */,
 				A59FE68126C7CC53005F2BCC /* TetopiViewModel.swift in Sources */,
 				A5026D9F26C7CD8B005B4321 /* Category.swift in Sources */,
 				A5026D9826C7CD8B005B4321 /* Thumbnail.swift in Sources */,
-				A5026DCD26C7CF28005B4321 /* DashboardView.swift in Sources */,
+				A5026DCD26C7CF28005B4321 /* MainView.swift in Sources */,
 				A5026D9926C7CD8B005B4321 /* Edition.swift in Sources */,
 				A5026D9B26C7CD8B005B4321 /* Print.swift in Sources */,
 				A5026D9A26C7CD8B005B4321 /* MediumLarge.swift in Sources */,

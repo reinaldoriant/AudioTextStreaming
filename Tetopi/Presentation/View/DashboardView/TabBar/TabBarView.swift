@@ -17,14 +17,14 @@ struct TabBarView: View {
     let tabBarTextNames = ["Kompas.id", "ePaper","Buku","Akun"]
     
     var body: some View {
-        VStack{
-            //MARK: - View
-            Spacer()
-            ZStack{
+        ZStack(alignment: .bottom){
+            
+            //MARK: - Main View
+            Group{
                 switch selectedIndex{
                 case 0:
                     ArticleListTerbaru()
-                        //.environmentObject(tetopiViewModel)
+                //.environmentObject(tetopiViewModel)
                 case 1:
                     ePaperView()
                 case 2:
@@ -32,38 +32,40 @@ struct TabBarView: View {
                 default:
                     akunView()
                 }
-                
             }
-            
-            //            //MARK: - Tab Bar
-            //            ZStack{
-            //                Rectangle()
-            //                    .fill(Color.white)
-            //                    .frame(height: 68, alignment: .bottom)
-            Spacer()
-            HStack{
-                ForEach(0..<4) {num in
-                    Button(action: {
-                        selectedIndex = num
-                    }, label: {
-                        Spacer()
-                        VStack {
-                            Image(tabBarImageNames[num])
-                                .foregroundColor(selectedIndex == num ? Color(red: 0, green: 0.349, blue: 0.604) : Color(red: 0.4, green: 0.4, blue: 0.4))
-                            Text(tabBarTextNames[num])
-                                .font(.system(size:9))
-                                .foregroundColor(selectedIndex == num ? Color(red: 0, green: 0.349, blue: 0.604) : Color(red: 0.4, green: 0.4, blue: 0.4))
-                        }.frame(height: 35)
-                        Spacer()
-                    })
+            //MARK: - Tetopi
+                if tetopiViewModel.showPlayer{
+                    TetopiView()
                 }
-            }
-            .padding(.top,9)
-            .padding(.bottom,16)
-            .background(Color.white)
-            .clipped()
-            .shadow(color: Color(red: 0, green: 0, blue: 0,opacity: 0.2), radius: 4, x: 0, y: 0)
             
+            //MARK: - Dashboard View
+            VStack{
+                Spacer()
+                let _ = print("Tetopi ini sudah expand, \(tetopiViewModel.expandFuper)")
+                HStack{
+                    ForEach(0..<4) {num in
+                        Button(action: {
+                            selectedIndex = num
+                        }, label: {
+                            Spacer()
+                            VStack {
+                                Image(tabBarImageNames[num])
+                                    .foregroundColor(selectedIndex == num ? Color(red: 0, green: 0.349, blue: 0.604) : Color(red: 0.4, green: 0.4, blue: 0.4))
+                                Text(tabBarTextNames[num])
+                                    .font(.system(size:9))
+                                    .foregroundColor(selectedIndex == num ? Color(red: 0, green: 0.349, blue: 0.604) : Color(red: 0.4, green: 0.4, blue: 0.4))
+                            }.frame(height: 35)
+                            Spacer()
+                        })
+                    }
+                }
+                .padding(.top,9)
+                .padding(.bottom,16)
+                .background(Color.white)
+                .clipped()
+                .shadow(color: Color(red: 0, green: 0, blue: 0,opacity: 0.2), radius: 4, x: 0, y: 0)
+            }.opacity(tetopiViewModel.expandFuper ? 0 : 1)
+            //MARK: - Tetopi
         }.ignoresSafeArea()
     }
 }

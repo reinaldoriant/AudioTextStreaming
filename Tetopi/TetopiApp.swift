@@ -11,7 +11,7 @@ import SwiftUI
 struct TetopiApp: App {
     var body: some Scene {
         WindowGroup {
-           DashboardView()
+           MainView()
         }
     }
 }

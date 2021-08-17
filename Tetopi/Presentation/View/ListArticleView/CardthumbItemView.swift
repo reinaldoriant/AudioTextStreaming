@@ -30,7 +30,7 @@ struct CardthumbItemView: View {
                                     image
                                         .resizable()
                                         .scaledToFill()
-                                        .frame(width: .infinity,height: 202, alignment: .center)
+                                        .frame(height: 202, alignment: .center)
                                         .clipped()
                                  })
                     }
@@ -84,7 +84,9 @@ struct CardthumbItemView: View {
                         if slugCategory.checkCategoryTetopi() {
                             Button(action:{
                                 tetopiViewModel.insertDataTetopi(data: TetopiModel(name: (article.name)!, image: (article.thumbnails?.availableSizes)!, title: (article.title)!, time: (article.publishedDate)!, category: (article.terms?.category![0].name)!, audio: (article.audio)!))
-                                tetopiViewModel.showPlayer = true
+                                withAnimation(.spring()){
+                                    tetopiViewModel.showPlayer = true
+                                }
                                 tetopiViewModel.initializeTetopi()
                             }, label: {
                                 Image("imgButtonTetopi")

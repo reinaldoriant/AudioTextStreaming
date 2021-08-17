@@ -15,31 +15,43 @@ class TetopiViewModel : ObservableObject {
     //UI Properties
     @Published var showPlayer = false
     @Published var expandFuper = false
-    @Published var heightPhone = 0
+    @Published var heightPhoneType = ""
+    @Published var heightTopFuper: CGFloat = 0
+    @Published var heightComperFromDashboard = 0
+    @Published var showSpinnerPlayback = false
+    @Published var isClosingTetopi = false
     
     //Audio Control
-
-    
     @Published var isPlaying : Bool = false
     var durationId: UInt?
     var elapsedID: UInt?
-    
     @Published var elapsedTime: String = ""
     @Published var durationTime: String = ""
     @Published var valueDurationSlider: Float = 0.0
     @Published var valueSlider: Float = 0.0
 
+
+    func initializeTetopi(){
+        setupAudio()
+        heightPhoneTetopi()
+        durationAndSliderAudio()
+    }
+    
+    func heightPhoneTetopi(){
+        if heightPhoneType == "TypeX" {
+            self.heightTopFuper = 58
+            self.heightComperFromDashboard = -59
+        }
+        else {
+            self.heightTopFuper = 32
+            self.heightComperFromDashboard = -59
+        }
+    }
     
     func insertDataTetopi(data: TetopiModel){
         self.dataTetopi = data
     }
     
-    // MARK: - Private
-
-    func initializeTetopi(){
-        setupAudio()
-        durationAndSlider()
-    }
     func setupAudio(){
         
         let url = URL(string: dataTetopi?.audio ?? "")!
@@ -48,7 +60,7 @@ class TetopiViewModel : ObservableObject {
         isPlaying = true
     }
     
-    func playPause() {
+    func playPauseAudio() {
         if isPlaying == true {
             SAPlayer.shared.pause()
             
@@ -58,6 +70,9 @@ class TetopiViewModel : ObservableObject {
         self.isPlaying.toggle()
     }
     
+    func stopAudio(){
+        SAPlayer.shared.stopStreamingRemoteAudio()
+    }
     //    func next() {
     //        if let currentIndex = dataTetopi.firstIndex(of: audio){
     //            if currentIndex == album.songs.count - 1{
@@ -84,11 +99,10 @@ class TetopiViewModel : ObservableObject {
     //        }
     //    }
     
-    func durationAndSlider() {
+    func durationAndSliderAudio() {
         durationId = SAPlayer.Updates.Duration.subscribe { (url, duration) in
             self.durationTime = SAPlayer.prettifyTimestamp(duration)
             self.valueDurationSlider = Float(duration)
-            print("kamu siapa nilaimu berapa? \(duration)")
         }
         elapsedID = SAPlayer.Updates.ElapsedTime.subscribe {(url, position) in
             self.elapsedTime = SAPlayer.prettifyTimestamp(position)
