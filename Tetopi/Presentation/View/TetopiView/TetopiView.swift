@@ -12,19 +12,14 @@ struct TetopiView: View {
     //MARK: - Properties
     
     @EnvironmentObject var tetopiViewModel: TetopiViewModel
-    //Animation Tetopi
-    @State var offsetFuper : CGFloat = 0
     var height = UIScreen.main.bounds.height / 3
-    //Player audio Tetopi
-    @State var isPlaying : Bool = false
     
     var body: some View{
         Group{
-            let _ = print("Ini berapa expand comper \(tetopiViewModel.heightComperFromDashboard)")
             //MARK: - Tetopi Fuper
             if tetopiViewModel.expandFuper{
                 ZStack() {
-                    VStack(alignment: . center){
+                    VStack(alignment: .center){
                         
                         //MARK: - Category and button down
                         ZStack{
@@ -83,7 +78,7 @@ struct TetopiView: View {
                         VStack{
                             //Slider
                             //                        CustomSlider(value: $tetopiViewModel.valueSlider, range: 0...tetopiViewModel.valueDurationSlider)
-                            Slider(value: $tetopiViewModel.valueSlider, in: 0...tetopiViewModel.valueDurationSlider)
+                            Slider(value: $tetopiViewModel.valueCurrentSlider, in: 0...tetopiViewModel.valueDurationSlider)
                                 .accentColor(Color(UIColor(named: "ColorBlueKompas")!))
                             HStack(){
                                 Text(getTimeTetopi(time: tetopiViewModel.elapsedTime))
@@ -138,7 +133,7 @@ struct TetopiView: View {
                         HStack(alignment:.center,spacing:0){
                             Button(action: {
                                 withAnimation{
-                                tetopiViewModel.showSpinnerPlayback = true
+                                    tetopiViewModel.showSpinnerPlayback = true
                                 }
                             },label:{
                                 Text("1x")
@@ -169,7 +164,8 @@ struct TetopiView: View {
                         Spacer()
                         if tetopiViewModel.showSpinnerPlayback{
                             HStack{
-                                    SpinnerPlaybackSpeedView()
+                                SpinnerPlaybackSpeedView()
+                                    .padding(.bottom, 16)
                                 Spacer()
                             }
                         }
@@ -179,65 +175,85 @@ struct TetopiView: View {
             }
             //MARK: - Tetopi Comper
             else {
-                HStack{
-                    //MARK: - Image Tetopi Comper
-                    if let imgurl = tetopiViewModel.dataTetopi?.image ?? "Gambarnya Kosong",
-                       let url = URL(string: imgurl){
-                        URLImage(url: url,
-                                 failure:{ error, _ in
-                                    EmptyView()
-                                 }, content: { image in
-                                    image
-                                        .resizable()
-                                        .interpolation(.none)
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(width: 80, height: 80)
-                                        .clipped()
-                                 })
+                VStack(spacing: 0){
+                    ZStack(alignment: .leading) {
+                        Rectangle().fill(Color.white.opacity(0.08)).frame(height: 4)
+                        Rectangle().fill(Color(UIColor(named: "ColorBlueKompas")!)).frame(width: tetopiViewModel.valueCurrentSliderComper, height: 4)
                     }
                     
-                    //MARK: - Title and date Tetopi Comper
-                    VStack(alignment: .leading, spacing: 2){
-                        Spacer()
-                        Text(tetopiViewModel.dataTetopi?.title ?? "Title Kosong")
-                            .multilineTextAlignment(.center)
-                            .font(Font.custom("PlayFairDisplay-Bold", size: 16))
-                            .lineLimit(1)
+                    HStack{
+                        //MARK: - Image Tetopi Comper
+                        ZStack(alignment: .topLeading){
+                            
+                            if let imgurl = tetopiViewModel.dataTetopi?.image ?? "Gambarnya Kosong",
+                               let url = URL(string: imgurl){
+                                URLImage(url: url,
+                                         failure:{ error, _ in
+                                            EmptyView()
+                                         }, content: { image in
+                                            image
+                                                .resizable()
+                                                .interpolation(.none)
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(width: 80, height: 80)
+                                                .clipped()
+                                         })
+                            }
+                            VStack(alignment: .leading){
+                               
+                                    
+                                Image("imgIndicatorExpandFuper")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                
+                            }
+                        }
                         
-                        
-                        Text(getDateArticleList(date: tetopiViewModel.dataTetopi?.time ?? "Tanggal kosong", category: tetopiViewModel.dataTetopi?.category ?? "Tanggal kosong"))
-                            .hindRegular12()
-                            .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                        
-                        Spacer()
-                    }
-                    .frame(width: 168)
-                    .padding(.trailing,22)
-                    Spacer()
-                    
-                    //MARK: - Player and close Tetopi Comper
-                    HStack(spacing: 22) {
-                        Button(action: {
-                            tetopiViewModel.playPauseAudio()
-                        }, label: {
-                            Image(systemName: tetopiViewModel.isPlaying ? "pause.fill" : "play.fill").resizable()
-                        })
-                        .frame(width: 14, height: 14, alignment: .center)
-                        .foregroundColor(Color(UIColor(named: "ColorBlueKompas")!))
-                        
-                        Rectangle()
-                            .frame(width: 1, height: 50)
-                            .foregroundColor(Color(UIColor(named: "ColorGrayDDD")!))
-                        Button(action: {
-                            tetopiViewModel.isClosingTetopi = true
-                            tetopiViewModel.showPlayer = false
-                            tetopiViewModel.stopAudio()
-                        }, label: {
-                            Image(systemName: "xmark").resizable()
-                                .frame(width: 14, height: 14, alignment: .center)
+                        //MARK: - Title and date Tetopi Comper
+                        VStack(alignment: .leading, spacing: 2){
+                            Spacer()
+                            Text(tetopiViewModel.dataTetopi?.title ?? "Title Kosong")
+                                .multilineTextAlignment(.center)
+                                .font(Font.custom("PlayFairDisplay-Bold", size: 16))
+                                .lineLimit(1)
+                            
+                            
+                            Text(getDateArticleList(date: tetopiViewModel.dataTetopi?.time ?? "Tanggal kosong", category: tetopiViewModel.dataTetopi?.category ?? "Tanggal kosong"))
+                                .hindRegular12()
                                 .foregroundColor(Color(UIColor(named: "ColorGray666")!))
-                        })
+                            
+                            Spacer()
+                        }
+                        .frame(width: 168)
                         .padding(.trailing,22)
+                        Spacer()
+                        
+                        //MARK: - Player and close Tetopi Comper
+                        HStack(spacing: 22) {
+                            Button(action: {
+                                tetopiViewModel.playPauseAudio()
+                            }, label: {
+                                Image(systemName: tetopiViewModel.isPlaying ? "pause.fill" : "play.fill").resizable()
+                            })
+                            .frame(width: 14, height: 14, alignment: .center)
+                            .foregroundColor(Color(UIColor(named: "ColorBlueKompas")!))
+                            
+                            Rectangle()
+                                .frame(width: 1, height: 50)
+                                .foregroundColor(Color(UIColor(named: "ColorGrayDDD")!))
+                            Button(action: {
+                                withAnimation{
+                                    tetopiViewModel.isClosingTetopi = true
+                                    tetopiViewModel.showPlayer = false
+                                    tetopiViewModel.stopAudio()
+                                }
+                            }, label: {
+                                Image(systemName: "xmark").resizable()
+                                    .frame(width: 14, height: 14, alignment: .center)
+                                    .foregroundColor(Color(UIColor(named: "ColorGray666")!))
+                            })
+                            .padding(.trailing,22)
+                        }
                     }
                 }
                 .transition(AnyTransition.move(edge: .bottom).combined(with: .opacity))
@@ -256,7 +272,7 @@ struct TetopiView: View {
             }
         )
         .offset(y: CGFloat(tetopiViewModel.expandFuper ? 0 : tetopiViewModel.heightComperFromDashboard))
-        .offset(y: offsetFuper)
+        .offset(y: tetopiViewModel.offsetFuper)
         .opacity(tetopiViewModel.isClosingTetopi ? 0 : 1)
         .gesture(DragGesture().onEnded(onEndedTetopi(value:)).onChanged(onChangedTetopi(value:)))
         .onTapGesture {
@@ -270,7 +286,7 @@ struct TetopiView: View {
     func onChangedTetopi(value: DragGesture.Value)
     {
         if value.translation.height > 0 && tetopiViewModel.expandFuper{
-            offsetFuper = value.translation.height
+            tetopiViewModel.offsetFuper = value.translation.height
         }
     }
     
@@ -280,7 +296,7 @@ struct TetopiView: View {
             tetopiViewModel.expandFuper = false
         }
         
-        offsetFuper = 0
+        tetopiViewModel.offsetFuper = 0
     }
     
 }

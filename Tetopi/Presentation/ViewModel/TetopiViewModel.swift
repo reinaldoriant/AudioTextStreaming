@@ -15,11 +15,14 @@ class TetopiViewModel : ObservableObject {
     //UI Properties
     @Published var showPlayer = false
     @Published var expandFuper = false
+    @Published var isClosingTetopi = false
+    @Published var showSpinnerPlayback = false
+    
     @Published var heightPhoneType = ""
     @Published var heightTopFuper: CGFloat = 0
     @Published var heightComperFromDashboard = 0
-    @Published var showSpinnerPlayback = false
-    @Published var isClosingTetopi = false
+    @Published var offsetFuper : CGFloat = 0
+
     
     //Audio Control
     @Published var isPlaying : Bool = false
@@ -28,24 +31,28 @@ class TetopiViewModel : ObservableObject {
     @Published var elapsedTime: String = ""
     @Published var durationTime: String = ""
     @Published var valueDurationSlider: Float = 0.0
-    @Published var valueSlider: Float = 0.0
+    @Published var valueCurrentSlider: Float = 0.0
+    @Published var valueDurationSliderComper: CGFloat = 0.0
+    @Published var valueCurrentSliderComper: CGFloat = 0.0
 
 
     func initializeTetopi(){
-        setupAudio()
         heightPhoneTetopi()
+        setupAudio()
         durationAndSliderAudio()
+        self.isClosingTetopi = false
     }
     
     func heightPhoneTetopi(){
         if heightPhoneType == "TypeX" {
             self.heightTopFuper = 58
-            self.heightComperFromDashboard = -59
+            self.heightComperFromDashboard = -60
         }
         else {
             self.heightTopFuper = 32
-            self.heightComperFromDashboard = -59
+            self.heightComperFromDashboard = -60
         }
+        
     }
     
     func insertDataTetopi(data: TetopiModel){
@@ -103,10 +110,12 @@ class TetopiViewModel : ObservableObject {
         durationId = SAPlayer.Updates.Duration.subscribe { (url, duration) in
             self.durationTime = SAPlayer.prettifyTimestamp(duration)
             self.valueDurationSlider = Float(duration)
+            self.valueDurationSliderComper = CGFloat(duration)
         }
         elapsedID = SAPlayer.Updates.ElapsedTime.subscribe {(url, position) in
             self.elapsedTime = SAPlayer.prettifyTimestamp(position)
-            self.valueSlider = Float(position)
+            self.valueCurrentSlider = Float(position)
+            self.valueCurrentSliderComper = CGFloat(position)
         }
 //        let value = Double(elapsedTime)!
 //        SAPlayer.shared.seekTo(seconds: value)

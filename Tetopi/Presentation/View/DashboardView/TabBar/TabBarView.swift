@@ -18,9 +18,8 @@ struct TabBarView: View {
     
     var body: some View {
         ZStack(alignment: .bottom){
-            
             //MARK: - Main View
-            Group{
+            VStack{
                 switch selectedIndex{
                 case 0:
                     ArticleListTerbaru()
@@ -34,14 +33,13 @@ struct TabBarView: View {
                 }
             }
             //MARK: - Tetopi
-                if tetopiViewModel.showPlayer{
-                    TetopiView()
-                }
+            if tetopiViewModel.showPlayer{
+                TetopiView()
+            }
             
             //MARK: - Dashboard View
             VStack{
                 Spacer()
-                let _ = print("Tetopi ini sudah expand, \(tetopiViewModel.expandFuper)")
                 HStack{
                     ForEach(0..<4) {num in
                         Button(action: {
